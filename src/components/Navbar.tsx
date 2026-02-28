@@ -86,7 +86,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Overlay */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-[#0f1729]/98 backdrop-blur-lg z-40">
+        <div className="md:hidden fixed inset-0 top-16 z-40" style={{ backgroundColor: "#0f1729" }}>
           <div className="flex flex-col items-center justify-center h-full gap-6 -mt-16">
             {navLinks.map((link) => (
               <a
