@@ -29,6 +29,21 @@ export default function CTA() {
           <p className="text-slate-500 text-xs sm:text-sm mt-6">
             476 NW Peacock Blvd #108, Port St. Lucie, FL 34986
           </p>
+
+          {/* Direct signup nudge */}
+          <div className="mt-8 pt-8 border-t border-white/10">
+            <p className="text-slate-300 text-sm sm:text-base mb-4">
+              Already know you want in?
+            </p>
+            <a
+              href="https://v3-mma.gymdesk.com/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-[#0f1729] px-10 py-4 rounded-xl text-lg sm:text-xl font-black transition-all hover:shadow-2xl hover:shadow-white/20 hover:-translate-y-1 hover:scale-105"
+            >
+              Join V3 MMA Today →
+            </a>
+          </div>
         </div>
       </div>
     </section>

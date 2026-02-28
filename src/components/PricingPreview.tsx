@@ -84,7 +84,9 @@ export default function PricingPreview() {
               </ul>
 
               <a
-                href="#free-trial"
+                href="https://v3-mma.gymdesk.com/signup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`block w-full text-center py-3 rounded-xl font-semibold text-sm transition-all ${
                   plan.popular
                     ? "bg-blue-600 hover:bg-blue-500 text-white hover:shadow-lg hover:shadow-blue-500/25"
