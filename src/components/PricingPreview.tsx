@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const plans = [
   {
     name: "Two Week Starter",
@@ -46,7 +44,7 @@ export default function PricingPreview() {
             Simple, Honest Pricing
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
-            No hidden fees. No long-term contracts. Just affordable training with world-class coaching.
+            No hidden fees. No long-term contracts. The most affordable MMA training in Port St. Lucie.
           </p>
         </div>
 
@@ -85,10 +83,8 @@ export default function PricingPreview() {
                 ))}
               </ul>
 
-              <Link
-                href="https://v3-mma.gymdesk.com/signup"
-                target="_blank"
-                rel="noopener noreferrer"
+              <a
+                href="#free-trial"
                 className={`block w-full text-center py-3 rounded-xl font-semibold text-sm transition-all ${
                   plan.popular
                     ? "bg-blue-600 hover:bg-blue-500 text-white hover:shadow-lg hover:shadow-blue-500/25"
@@ -96,7 +92,7 @@ export default function PricingPreview() {
                 }`}
               >
                 Get Started
-              </Link>
+              </a>
             </div>
           ))}
         </div>

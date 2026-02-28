@@ -18,7 +18,7 @@ export default function Gallery() {
             Inside the Gym
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Blue mats, heavy bags, and a crew that works hard. Take a look at where it all goes down.
+            Blue mats, heavy bags, and a crew that works hard. Step inside V3 MMA in Port St. Lucie.
           </p>
         </div>
 

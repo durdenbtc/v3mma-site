@@ -30,7 +30,7 @@ export default function Schedule() {
             Class Schedule
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-xl mx-auto">
-            Find a class that fits your schedule. All skill levels welcome.
+            Find a class near you that fits your schedule. All skill levels welcome at our Port St. Lucie gym.
           </p>
         </div>
 

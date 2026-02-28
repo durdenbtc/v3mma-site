@@ -70,10 +70,10 @@ export default function Disciplines() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Train Multiple Disciplines
+            Train Multiple Disciplines Near You
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
-            One membership. Unlimited access to every class. Learn striking, grappling, and everything in between.
+            One membership. Unlimited access to every class at our Port St. Lucie gym. Learn striking, grappling, and everything in between.
           </p>
         </div>
 

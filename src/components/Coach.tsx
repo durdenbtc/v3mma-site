@@ -35,7 +35,7 @@ export default function Coach() {
               Shane Mistretta
             </h3>
             <p className="text-blue-400 font-semibold text-sm mb-6">
-              Head Coach &bull; Pro MMA Fighter &bull; Featherweight
+              Head Coach &bull; Pro MMA Fighter &bull; Port St. Lucie, FL
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-5">
@@ -135,8 +135,8 @@ export default function Coach() {
         {/* Bottom value prop */}
         <div className="mt-8 sm:mt-10 text-center">
           <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
-            Most gyms rotate instructors or hire trainers who&apos;ve never competed.
-            At V3 MMA, you train with a verified professional fighter &mdash; every single class.
+            Most gyms in Port St. Lucie rotate instructors or hire trainers who&apos;ve never competed.
+            V3 MMA is the only gym in the area where every class is coached by a verified professional fighter.
           </p>
         </div>
       </div>
