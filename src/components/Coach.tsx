@@ -1,4 +1,5 @@
 import Image from "next/image";
+import GuestCoaches from "./GuestCoaches";
 
 export default function Coach() {
   return (
@@ -7,10 +8,10 @@ export default function Coach() {
         {/* Section header */}
         <div className="text-center mb-12 sm:mb-16">
           <p className="text-blue-400 font-semibold text-sm tracking-widest uppercase mb-3">
-            Your Coach
+            Your Coaches
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">
-            Trained by a <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Real Fighter</span>
+            Trained by <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Real Fighters</span>
           </h2>
         </div>
 
@@ -139,6 +140,9 @@ export default function Coach() {
             V3 MMA is the only gym in the area where every class is coached by a verified professional fighter.
           </p>
         </div>
+
+        {/* Guest / Specialty Coaches */}
+        <GuestCoaches />
       </div>
     </section>
   );
