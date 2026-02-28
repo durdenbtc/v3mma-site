@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Disciplines from "@/components/Disciplines";
+import VideoShowcase from "@/components/VideoShowcase";
 import Coach from "@/components/Coach";
 import Gallery from "@/components/Gallery";
 import FreeTrial from "@/components/FreeTrial";
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <Hero />
       <Disciplines />
+      <VideoShowcase />
       <Coach />
       <Gallery />
       <FreeTrial />
