@@ -1,10 +1,5 @@
-# fly.toml app configuration file generated for v3mma-site on 2026-02-28T06:42:12Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
 app = 'v3mma-site'
-primary_region = 'dfw'
+primary_region = 'mia'
 
 [build]
 
@@ -17,7 +12,6 @@ primary_region = 'dfw'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 256
