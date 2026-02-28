@@ -5,17 +5,21 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "V3 MMA Gym & Fitness | Port St. Lucie, FL",
+  title: "V3 MMA Gym & Fitness | Boxing, Kickboxing & MMA in Port St. Lucie, FL",
   description:
-    "Port St. Lucie's most affordable semi-private MMA gym. Boxing, Kickboxing, Muay Thai, BJJ & MMA Fitness. Small classes, real coaching, no experience needed. $129/month — no contracts.",
+    "Port St. Lucie's most affordable semi-private MMA gym. Boxing, Kickboxing, Muay Thai, No-Gi BJJ & MMA Fitness classes coached by a pro fighter. Small classes, no experience needed. $129/month — no contracts.",
   keywords: [
     "MMA gym Port St. Lucie",
     "boxing classes Port St. Lucie",
-    "kickboxing Port St. Lucie",
+    "kickboxing classes Port St. Lucie",
+    "Muay Thai Port St. Lucie",
     "martial arts near me",
+    "martial arts gym Port St. Lucie",
     "beginner MMA classes",
-    "kids MMA program",
+    "kids martial arts Port St. Lucie",
     "Brazilian Jiu Jitsu Port St. Lucie",
+    "boxing gym near me",
+    "kickboxing near me",
     "V3 MMA",
   ],
   icons: {
@@ -23,9 +27,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "V3 MMA Gym & Fitness | Port St. Lucie, FL",
+    title: "V3 MMA Gym & Fitness | Boxing, Kickboxing & MMA in Port St. Lucie, FL",
     description:
-      "Semi-private MMA gym with small classes, pro coaching, and no contracts. Starting at $129/month.",
+      "Boxing, Kickboxing, Muay Thai & BJJ classes coached by a pro fighter. Small classes, no contracts. Starting at $129/month.",
     url: "https://v3mma.com",
     siteName: "V3 MMA Gym & Fitness",
     locale: "en_US",

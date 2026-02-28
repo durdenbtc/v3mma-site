@@ -29,19 +29,24 @@ export default function Hero() {
           <span className="text-slate-300 text-xs sm:text-sm font-medium">Now Enrolling New Members</span>
         </div>
 
-        {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-4 sm:mb-6 tracking-tight">
+        {/* SEO H1 — visually hidden but crawlable */}
+        <h1 className="sr-only">
+          MMA Gym, Boxing, Kickboxing &amp; Muay Thai Classes in Port St. Lucie, FL — V3 MMA Gym &amp; Fitness
+        </h1>
+
+        {/* Visual Headline */}
+        <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-4 sm:mb-6 tracking-tight" aria-hidden="true">
           Learn to Fight.
           <br />
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             Get in Shape.
           </span>
-        </h1>
+        </p>
 
         {/* Subheadline */}
         <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-3 leading-relaxed">
           Port St. Lucie&apos;s most affordable semi-private MMA gym.
-          Small classes. Real coaching. No experience needed.
+          Boxing, kickboxing, Muay Thai, BJJ &amp; more. No experience needed.
         </p>
 
         {/* Price anchor */}

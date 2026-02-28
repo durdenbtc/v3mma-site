@@ -32,7 +32,7 @@ export default function BJJPage() {
       discipline="No-Gi BJJ"
       tagline="Learn to control, submit, and dominate on the ground."
       heroDescription="Brazilian Jiu-Jitsu is the most effective ground fighting system in the world — and the great equalizer. Size and strength matter less when you know how to use leverage, position, and submissions. Our no-gi BJJ classes focus on practical grappling technique that works in competition and real-world situations."
-      imageSrc="/images/gym-4.jpg"
+      imageSrc="/images/a9ace73f1c66.jpg"
       imageAlt="No-Gi BJJ classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
         {

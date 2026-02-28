@@ -32,7 +32,7 @@ export default function KickboxingPage() {
       discipline="Kickboxing"
       tagline="Real kickboxing technique — not a glorified cardio class."
       heroDescription="Our kickboxing classes combine punches and kicks into a high-energy, full-body workout that also teaches you real striking technique. You'll learn how to throw proper roundhouse kicks, check kicks, and put combinations together — all coached by a professional fighter who uses these skills in the cage."
-      imageSrc="/images/gym-2.jpg"
+      imageSrc="/images/2a03328ffe45.jpg"
       imageAlt="Kickboxing classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
         {

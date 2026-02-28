@@ -32,7 +32,7 @@ export default function KidsMMAPage() {
       discipline="Kids MMA"
       tagline="Build confidence, discipline, and real skills — not just participation trophies."
       heroDescription="Our Kids MMA program teaches children ages 6-15 real martial arts fundamentals in a safe, structured environment. Kids learn striking basics, grappling fundamentals, and self-defense skills while building the confidence, discipline, and physical fitness that carries over into everything else they do."
-      imageSrc="/images/gym-6.jpg"
+      imageSrc="/images/6a0ea4d4aa1a.jpg"
       imageAlt="Kids MMA and martial arts classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
         {

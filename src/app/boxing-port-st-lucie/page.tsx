@@ -32,7 +32,7 @@ export default function BoxingPage() {
       discipline="Boxing"
       tagline="Learn to box the right way — from a real fighter."
       heroDescription="Our boxing classes teach you proper stance, footwork, combinations, and defense from day one. Whether you want to get in shape, learn self-defense, or eventually step in the ring, you'll train with a professional MMA fighter who brings real fight IQ to every round."
-      imageSrc="/images/gym-1.jpg"
+      imageSrc="/images/01bfa571c65b.jpg"
       imageAlt="Boxing classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
         {

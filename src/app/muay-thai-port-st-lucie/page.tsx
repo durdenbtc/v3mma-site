@@ -32,7 +32,7 @@ export default function MuayThaiPage() {
       discipline="Muay Thai"
       tagline="The art of eight limbs — taught by someone who's used them."
       heroDescription="Muay Thai is the most complete striking art in the world, using punches, kicks, elbows, and knees. Our classes teach you authentic Muay Thai technique — clinch work, devastating kicks, and the fight IQ that only comes from a coach who's competed professionally."
-      imageSrc="/images/gym-3.jpg"
+      imageSrc="/images/8835996ec94a.jpg"
       imageAlt="Muay Thai classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
         {

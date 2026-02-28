@@ -92,7 +92,7 @@ export default function Reviews() {
 
         <div className="text-center mt-8">
           <a
-            href="https://www.google.com/maps/place/V3+MMA+Gym+%26+Fitness/"
+            href="https://maps.app.goo.gl/SbsqVHBDRVMEy7Gg8"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"

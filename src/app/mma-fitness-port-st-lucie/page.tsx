@@ -32,7 +32,7 @@ export default function MMAFitnessPage() {
       discipline="MMA Fitness"
       tagline="Train like a fighter. No fighting required."
       heroDescription="MMA Fitness takes the conditioning that professional fighters use and packages it into an accessible, high-energy class anyone can do. You'll hit pads, work the heavy bag, do bodyweight circuits, and build functional strength and cardio — all while learning real martial arts techniques along the way."
-      imageSrc="/images/gym-5.jpg"
+      imageSrc="/images/def064c56ca4.jpg"
       imageAlt="MMA Fitness classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
         {

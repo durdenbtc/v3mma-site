@@ -48,9 +48,27 @@ export default function DisciplinePage({
       widget.setAttribute("attr-stepsvisibility", "visible");
       bookingRef.current.appendChild(widget);
 
+      const initGymDesk = () => {
+        const w = window as unknown as Record<string, unknown>;
+        if (w.GymDesk && typeof (w.GymDesk as Record<string, unknown>).init === "function") {
+          (w.GymDesk as { init: () => void }).init();
+        }
+      };
+
+      // If GymDesk script is already loaded, just re-init
       const w = window as unknown as Record<string, unknown>;
-      if (w.GymDesk && typeof (w.GymDesk as Record<string, unknown>).init === "function") {
-        (w.GymDesk as { init: () => void }).init();
+      if (w.GymDesk) {
+        initGymDesk();
+      } else {
+        // Script may not have loaded yet on direct page visit — load it manually
+        const script = document.createElement("script");
+        script.src = "https://app.gymdesk.com/js/widgets.js";
+        script.async = true;
+        script.onload = () => {
+          // GymDesk auto-inits on load, but give it a moment
+          setTimeout(initGymDesk, 500);
+        };
+        document.head.appendChild(script);
       }
     }
   }, []);
