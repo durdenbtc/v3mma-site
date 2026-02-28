@@ -18,76 +18,106 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f1729]/95 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+    <>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f1729]/95 backdrop-blur-md border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 sm:h-20">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/website-logo.png"
+                alt="V3 MMA"
+                width={500}
+                height={378}
+                className="w-auto h-10 sm:h-12"
+              />
+              <div className="hidden sm:block">
+                <span className="text-white font-bold text-xl tracking-tight">V3 MMA</span>
+                <span className="block text-[10px] text-slate-400 tracking-[0.2em] uppercase -mt-1">
+                  Gym & Fitness
+                </span>
+              </div>
+            </Link>
+
+            {/* Desktop Nav */}
+            <div className="hidden md:flex items-center gap-1">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href="#free-trial"
+                className="ml-4 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all hover:shadow-lg hover:shadow-blue-500/25"
+              >
+                FREE TRIAL
+              </a>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="flex items-center gap-3 md:hidden">
+              <a
+                href="#free-trial"
+                className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all"
+              >
+                FREE TRIAL
+              </a>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-white p-2"
+                aria-label="Toggle menu"
+              >
+                {isOpen ? (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Nav Overlay — rendered outside nav to avoid parent styling interference */}
+      {isOpen && (
+        <div
+          className="md:hidden fixed inset-0 z-[60]"
+          style={{ background: "#0f1729" }}
+        >
+          {/* Close button in top right */}
+          <div className="absolute top-4 right-4">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-white p-3"
+              aria-label="Close menu"
+            >
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Logo in top left */}
+          <div className="absolute top-4 left-4">
             <Image
               src="/images/website-logo.png"
               alt="V3 MMA"
               width={500}
               height={378}
-              className="w-auto h-10 sm:h-12"
+              className="w-auto h-10"
             />
-            <div className="hidden sm:block">
-              <span className="text-white font-bold text-xl tracking-tight">V3 MMA</span>
-              <span className="block text-[10px] text-slate-400 tracking-[0.2em] uppercase -mt-1">
-                Gym & Fitness
-              </span>
-            </div>
-          </Link>
-
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-            <a
-              href="#free-trial"
-              className="ml-4 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all hover:shadow-lg hover:shadow-blue-500/25"
-            >
-              FREE TRIAL
-            </a>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="flex items-center gap-3 md:hidden">
-            <a
-              href="#free-trial"
-              className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all"
-            >
-              FREE TRIAL
-            </a>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-white p-2"
-              aria-label="Toggle menu"
-            >
-              {isOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Nav Overlay */}
-      {isOpen && (
-        <div className="md:hidden fixed inset-0 top-16 z-40" style={{ backgroundColor: "#0f1729" }}>
-          <div className="flex flex-col items-center justify-center h-full gap-6 -mt-16">
+          {/* Centered menu links */}
+          <div className="flex flex-col items-center justify-center h-full gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -114,6 +144,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </nav>
+    </>
   );
 }
