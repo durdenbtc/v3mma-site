@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Disciplines from "@/components/Disciplines";
+import Coach from "@/components/Coach";
 import Gallery from "@/components/Gallery";
 import FreeTrial from "@/components/FreeTrial";
 import PricingPreview from "@/components/PricingPreview";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Hero />
       <Disciplines />
+      <Coach />
       <Gallery />
       <FreeTrial />
       <PricingPreview />
