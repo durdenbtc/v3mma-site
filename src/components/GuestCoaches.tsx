@@ -29,7 +29,7 @@ const coaches = [
       patience, technique, and relentless pressure. Fluent in Spanish.`,
     specialties: ["No-Gi BJJ", "Gi BJJ", "Submissions"],
     links: {
-      instagram: null,
+      instagram: "https://www.instagram.com/santigb.bjj/",
       tapology: null,
     },
   },
