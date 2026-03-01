@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DisciplinePage from "@/components/DisciplinePage";
+import SiteShell from "@/components/SiteShell";
 
 export const metadata: Metadata = {
   title: "Kids MMA & Martial Arts Classes in Port St. Lucie, FL | V3 MMA",
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
 
 export default function KidsMMAPage() {
   return (
+    <SiteShell>
     <DisciplinePage
       discipline="Kids MMA"
       tagline="Build confidence, discipline, and real skills — not just participation trophies."
@@ -112,5 +114,6 @@ export default function KidsMMAPage() {
         { name: "MMA Fitness", href: "/mma-fitness-port-st-lucie" },
       ]}
     />
+    </SiteShell>
   );
 }

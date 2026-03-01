@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DisciplinePage from "@/components/DisciplinePage";
+import SiteShell from "@/components/SiteShell";
 
 export const metadata: Metadata = {
   title: "No-Gi BJJ Classes in Port St. Lucie, FL | V3 MMA Gym & Fitness",
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
 
 export default function BJJPage() {
   return (
+    <SiteShell>
     <DisciplinePage
       discipline="No-Gi BJJ"
       tagline="Learn to control, submit, and dominate on the ground."
@@ -112,5 +114,6 @@ export default function BJJPage() {
         { name: "Kids MMA", href: "/kids-mma-port-st-lucie" },
       ]}
     />
+    </SiteShell>
   );
 }

@@ -1,3 +1,4 @@
+import SiteShell from "@/components/SiteShell";
 import Hero from "@/components/Hero";
 import Disciplines from "@/components/Disciplines";
 import VideoShowcase from "@/components/VideoShowcase";
@@ -13,7 +14,7 @@ import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
-    <>
+    <SiteShell>
       <Hero />
       <Disciplines />
       <VideoShowcase />
@@ -26,6 +27,6 @@ export default function Home() {
       <FAQ />
       <Contact />
       <CTA />
-    </>
+    </SiteShell>
   );
 }
