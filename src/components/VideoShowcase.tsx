@@ -5,19 +5,23 @@ import { useEffect, useRef, useState } from "react";
 export default function VideoShowcase() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [hasLoaded, setHasLoaded] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
+        const video = videoRef.current;
+        if (!video) return;
+
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          if (videoRef.current) {
-            videoRef.current.play().catch(() => {});
+          if (!hasLoaded) {
+            video.load();
+            setHasLoaded(true);
           }
+          video.play().catch(() => {});
         } else {
-          if (videoRef.current && !videoRef.current.paused) {
-            videoRef.current.pause();
+          if (!video.paused) {
+            video.pause();
           }
         }
       },
@@ -29,7 +33,7 @@ export default function VideoShowcase() {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [hasLoaded]);
 
   return (
     <section
@@ -45,9 +49,7 @@ export default function VideoShowcase() {
         playsInline
         preload="none"
       >
-        {isVisible && (
-          <source src="/videos/highlight.mp4" type="video/mp4" />
-        )}
+        <source src="/videos/highlight.mp4" type="video/mp4" />
       </video>
 
       {/* Dark overlay */}
