@@ -29,10 +29,10 @@ export default function FreeTrial() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Book Your Free Trial
+            Free MMA Trial Class in Port St. Lucie
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-xl mx-auto mb-3">
-            30 minutes. No experience needed. No obligations. Just show up and see what V3 is all about.
+            Try a free class — no experience needed, no obligations. Just show up and see what V3 MMA is all about.
           </p>
           <p className="text-blue-300/70 text-sm sm:text-base max-w-lg mx-auto">
             Don&apos;t want to book online? Feel free to just come by during any scheduled class — walk-ins are always welcome!

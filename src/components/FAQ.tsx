@@ -58,10 +58,10 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Frequently Asked Questions
+            Frequently Asked Questions About V3 MMA
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Got questions? We&apos;ve got answers.
+            Everything you need to know about training at our Port St. Lucie MMA gym.
           </p>
         </div>
 
@@ -74,6 +74,7 @@ export default function FAQ() {
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between p-5 sm:p-6 text-left"
+                aria-expanded={openIndex === index}
               >
                 <span className="text-white font-semibold text-sm sm:text-base pr-4">
                   {faq.question}

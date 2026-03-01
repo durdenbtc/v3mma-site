@@ -34,6 +34,21 @@ export const metadata: Metadata = {
     siteName: "V3 MMA Gym & Fitness",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://v3mma.com/images/142dd1814f7b.jpg",
+        width: 1200,
+        height: 630,
+        alt: "V3 MMA Gym — Boxing, MMA & Martial Arts in Port St. Lucie, FL",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "V3 MMA Gym & Fitness | Boxing, Kickboxing & MMA in Port St. Lucie, FL",
+    description:
+      "Boxing, Kickboxing, Muay Thai & BJJ classes coached by a pro fighter. Small classes, no contracts. Starting at $129/month.",
+    images: ["https://v3mma.com/images/142dd1814f7b.jpg"],
   },
   robots: {
     index: true,
@@ -42,6 +57,61 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://v3mma.com",
   },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "I have no experience — can I still join V3 MMA?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutely! Most of our members started with zero martial arts experience. Our classes in Port St. Lucie are designed to be beginner-friendly, and with a max of 15 people per class, you get real attention from the coach. We teach everything from scratch.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does an MMA Fitness class involve?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "MMA Fitness classes combine striking techniques like boxing, kickboxing, and Muay Thai with conditioning drills for a full-body workout. You'll learn real techniques while getting incredible cardio and strength training. No sparring required.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does V3 MMA offer a free trial class?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! We offer a free trial class so you can experience V3 MMA before committing. No obligations, no pressure. You can book online or just walk in during any scheduled class.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there contracts at V3 MMA?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No contracts. Memberships are month-to-month starting at $129/month and you can cancel anytime. We believe if you love the training, you'll stay.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What makes V3 MMA different from other gyms in Port St. Lucie?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Three things: class size (max 15 people per session), price ($129/month for unlimited access to all disciplines), and coaching (Shane Mistretta is an active professional MMA fighter, not just a fitness instructor). V3 MMA is the most affordable semi-private MMA gym in Port St. Lucie and the only one where every class is coached by a verified pro fighter.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is V3 MMA located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "V3 MMA is located at 476 NW Peacock Blvd #108, Port St. Lucie, FL 34986. We're conveniently located near the Peacock Boulevard exit off I-95, making us easy to reach from anywhere in Port St. Lucie, Fort Pierce, or the Treasure Coast area. Free parking available.",
+      },
+    },
+  ],
 };
 
 const jsonLd = {
@@ -120,12 +190,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="theme-color" content="#0f1729" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-YVK6K48KY2"

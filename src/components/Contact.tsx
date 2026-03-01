@@ -25,10 +25,10 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Get in Touch
+            Contact V3 MMA in Port St. Lucie
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-xl mx-auto">
-            Questions? Drop us a message or just swing by the gym.
+            Questions about classes, pricing, or your first visit? Drop us a message or swing by the gym — walk-ins welcome.
           </p>
         </div>
 

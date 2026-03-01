@@ -48,6 +48,7 @@ export default function VideoShowcase() {
         loop
         playsInline
         preload="none"
+        poster="/images/video-poster.jpg"
       >
         <source src="/videos/highlight.mp4" type="video/mp4" />
       </video>

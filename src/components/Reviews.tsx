@@ -68,10 +68,10 @@ export default function Reviews() {
             <span className="text-yellow-400 font-bold text-lg">5.0</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            What Our Members Say
+            Port St. Lucie&apos;s Top-Rated MMA Gym
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            37 five-star reviews on Google — don&apos;t take our word for it.
+            37 five-star Google reviews — hear what real members say about training at V3 MMA.
           </p>
         </div>
 

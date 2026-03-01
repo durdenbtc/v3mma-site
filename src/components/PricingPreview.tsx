@@ -41,10 +41,10 @@ export default function PricingPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Simple, Honest Pricing
+            Affordable MMA Gym Memberships
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
-            No hidden fees. No long-term contracts. The most affordable MMA training in Port St. Lucie.
+            No hidden fees. No long-term contracts. The most affordable MMA, boxing, and kickboxing training in Port St. Lucie.
           </p>
         </div>
 

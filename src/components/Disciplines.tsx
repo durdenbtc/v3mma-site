@@ -3,7 +3,7 @@ import Link from "next/link";
 const disciplines = [
   {
     name: "Boxing",
-    description: "Learn proper technique, footwork, and combinations. Great for fitness and self-defense.",
+    description: "Learn boxing technique, footwork, and combinations in Port St. Lucie. Great for fitness and self-defense at any level.",
     href: "/boxing-port-st-lucie",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -13,7 +13,7 @@ const disciplines = [
   },
   {
     name: "Kickboxing",
-    description: "Combine punches and kicks in high-energy classes. Build power, speed, and endurance.",
+    description: "High-energy kickboxing classes combining punches and kicks. Build power, speed, and endurance with real coaching.",
     href: "/kickboxing-port-st-lucie",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -23,7 +23,7 @@ const disciplines = [
   },
   {
     name: "Muay Thai",
-    description: "The art of eight limbs. Master punches, kicks, elbows, and knees with authentic Thai training.",
+    description: "Train the art of eight limbs — punches, kicks, elbows, and knees. Authentic Muay Thai classes on the Treasure Coast.",
     href: "/muay-thai-port-st-lucie",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -34,7 +34,7 @@ const disciplines = [
   },
   {
     name: "No-Gi BJJ",
-    description: "Brazilian Jiu-Jitsu without the gi. Learn submissions, sweeps, and ground control.",
+    description: "No-Gi Brazilian Jiu-Jitsu classes twice weekly. Learn submissions, sweeps, and ground control in Port St. Lucie.",
     href: "/bjj-port-st-lucie",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -44,7 +44,7 @@ const disciplines = [
   },
   {
     name: "MMA Fitness",
-    description: "Full-body conditioning using MMA techniques. Burn calories and build functional strength.",
+    description: "Full-body MMA conditioning covering boxing, Muay Thai, kickboxing, and wrestling. Burn calories and build functional strength.",
     href: "/mma-fitness-port-st-lucie",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -54,7 +54,7 @@ const disciplines = [
   },
   {
     name: "Kids MMA",
-    description: "Build confidence, discipline, and real martial arts skills in a safe, structured environment. Ages 6-15.",
+    description: "Kids martial arts classes in Port St. Lucie. Build confidence, discipline, and real skills in a safe, structured environment. Ages 6-15.",
     href: "/kids-mma-port-st-lucie",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -70,10 +70,10 @@ export default function Disciplines() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Train Multiple Disciplines Near You
+            Martial Arts Classes in Port St. Lucie
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
-            One membership. Unlimited access to every class at our Port St. Lucie gym. Learn striking, grappling, and everything in between.
+            One membership, unlimited access to every discipline. Learn striking, grappling, and everything in between — all coached by a pro fighter.
           </p>
         </div>
 

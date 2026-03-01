@@ -4,13 +4,13 @@ export default function CTA() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="bg-gradient-to-br from-blue-600/20 to-blue-800/10 border border-blue-500/20 rounded-2xl sm:rounded-3xl p-8 sm:p-12 lg:p-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6">
-            Ready to Start Training?
+            Start Your MMA Journey in Port St. Lucie
           </h2>
           <p className="text-slate-300 text-base sm:text-lg max-w-xl mx-auto mb-4 sm:mb-6">
-            Book your free 30-minute trial class or just come by during any scheduled class — walk-ins are always welcome.
+            Book your free trial class or just walk in during any scheduled session — beginners are always welcome at V3 MMA.
           </p>
           <p className="text-blue-300/80 text-sm sm:text-base mb-6 sm:mb-8">
-            No experience needed. No obligations. Just show up.
+            No experience needed. No contracts. No obligations.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <a

@@ -32,7 +32,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Port St. Lucie&apos;s most affordable semi-private MMA gym. Small classes, real coaching, no experience needed.
+              Port St. Lucie&apos;s most affordable semi-private MMA gym. Boxing, kickboxing, Muay Thai, BJJ &amp; MMA fitness — coached by a pro fighter. Small classes, no experience needed.
             </p>
           </div>
 
