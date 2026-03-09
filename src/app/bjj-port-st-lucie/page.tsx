@@ -103,7 +103,7 @@ export default function BJJPage() {
         },
         {
           q: "How much does BJJ cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited no-gi BJJ is $129/month — which includes every other class we offer. No gi to purchase, no belt testing fees, no contracts. We also offer Saturday Open Mat for additional rolling time. Free trial class available.",
+          a: "At V3 MMA, unlimited no-gi BJJ is $129/month — which includes every other class we offer. No gi to purchase, no belt testing fees, no contracts. We also offer Saturday Open Mat for additional rolling time. Your first class is free, and our $79 Two-Week Starter credits toward your first month's membership.",
         },
       ]}
       relatedDisciplines={[

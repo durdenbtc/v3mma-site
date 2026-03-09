@@ -1,10 +1,14 @@
 const plans = [
   {
     name: "Two Week Starter",
-    price: "$59",
+    price: "$79",
     period: "one-time",
-    description: "Perfect for trying us out. Full access for 2 weeks.",
-    features: ["Unlimited classes for 2 weeks", "All disciplines included", "No commitment"],
+    description: "Try everything for 2 weeks — applies toward your first month.",
+    features: [
+      "Unlimited classes for 2 weeks",
+      "All disciplines included",
+      "$79 credits toward your 1st month membership",
+    ],
     popular: false,
   },
   {

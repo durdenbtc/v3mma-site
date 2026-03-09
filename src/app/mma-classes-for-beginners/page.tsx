@@ -57,7 +57,7 @@ export default function BeginnerMMAPage() {
         },
         {
           title: "Most Affordable in the Area",
-          description: "$129/month gets you unlimited access to every class and every discipline. No contracts, no hidden fees. Try before you buy with a free trial class.",
+          description: "$129/month gets you unlimited access to every class and every discipline. No contracts, no hidden fees. First class free, and our $79 Two-Week Starter credits toward your first month.",
         },
       ]}
       whatYouLearn={[

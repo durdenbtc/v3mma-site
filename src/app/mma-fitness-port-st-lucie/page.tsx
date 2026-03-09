@@ -103,7 +103,7 @@ export default function MMAFitnessPage() {
         },
         {
           q: "How much does MMA Fitness cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited MMA Fitness classes are $129/month — which also gives you access to every other class including boxing, kickboxing, Muay Thai, and BJJ. No contracts, cancel anytime. Free trial class available.",
+          a: "At V3 MMA, unlimited MMA Fitness classes are $129/month — which also gives you access to every other class including boxing, kickboxing, Muay Thai, and BJJ. No contracts, cancel anytime. Your first class is free, and our $79 Two-Week Starter credits toward your first month's membership.",
         },
       ]}
       relatedDisciplines={[

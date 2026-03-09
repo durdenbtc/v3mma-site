@@ -82,7 +82,7 @@ const faqJsonLd = {
       name: "Does V3 MMA offer a free trial class?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer a free trial class so you can experience V3 MMA before committing. No obligations, no pressure. You can book online or just walk in during any scheduled class.",
+        text: "Yes! Your first class is free — just book online or walk in. After that, our $79 Two-Week Starter gives you unlimited access to every class, and the $79 credits toward your first monthly membership.",
       },
     },
     {

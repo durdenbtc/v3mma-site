@@ -34,8 +34,11 @@ export default function FreeTrial() {
           <p className="text-slate-400 text-base sm:text-lg max-w-xl mx-auto mb-3">
             Try a free class — no experience needed, no obligations. Just show up and see what V3 MMA is all about.
           </p>
-          <p className="text-blue-300/70 text-sm sm:text-base max-w-lg mx-auto">
+          <p className="text-blue-300/70 text-sm sm:text-base max-w-lg mx-auto mb-3">
             Don&apos;t want to book online? Feel free to just come by during any scheduled class — walk-ins are always welcome!
+          </p>
+          <p className="text-slate-500 text-xs sm:text-sm max-w-md mx-auto">
+            Love it? Our $79 Two-Week Starter gives you unlimited access — and it credits toward your first month&apos;s membership.
           </p>
         </div>
 

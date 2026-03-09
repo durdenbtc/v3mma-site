@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Is there a free trial?",
     answer:
-      "Yes! We offer a free 30-minute trial class so you can experience V3 before committing to anything. No obligations, no pressure. Just show up and see if it's for you.",
+      "Yes! Your very first class is free — just book online or walk in. If you love it, our $79 Two-Week Starter gives you unlimited access to every class for two full weeks. Best part: that $79 applies as a credit toward your first monthly membership, so you're not paying extra to try us out.",
   },
   {
     question: "Is there a contract?",

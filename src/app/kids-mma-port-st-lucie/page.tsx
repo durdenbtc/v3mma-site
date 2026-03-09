@@ -103,7 +103,7 @@ export default function KidsMMAPage() {
         },
         {
           q: "How much are kids martial arts classes in Port St. Lucie?",
-          a: "The V3 MMA Kids Program is $149/month with no contracts and no hidden fees. No belt testing fees, no required equipment purchases. We offer a free trial class so your child can experience it before you commit.",
+          a: "The V3 MMA Kids Program is $149/month with no contracts and no hidden fees. No belt testing fees, no required equipment purchases. Your child's first class is free so they can experience it before you commit.",
         },
       ]}
       relatedDisciplines={[
