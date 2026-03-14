@@ -5,7 +5,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 /* ------------------------------------------------------------------ */
 /*  CONFIG – Replace this with your deployed Google Apps Script URL    */
 /* ------------------------------------------------------------------ */
-const APPS_SCRIPT_URL = "PASTE_YOUR_APPS_SCRIPT_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzeAH3oneKPpUYnzfyYJWlE-UV9WIHK66No43b-Ovdnd2E54ltB-tGaI4PShY3NWA/exec";
 
 type Screen = "idle" | "welcome" | "register" | "error";
 
