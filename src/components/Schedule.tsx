@@ -6,7 +6,7 @@ export default function Schedule() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (containerRef.current) {
+    if (containerRef.current && containerRef.current.children.length === 0) {
       const widget = document.createElement("div");
       widget.className = "gymdesk-schedule";
       widget.setAttribute("attr-gym", "A9NNR");
@@ -15,9 +15,26 @@ export default function Schedule() {
       widget.setAttribute("attr-program", "all");
       containerRef.current.appendChild(widget);
 
+      const initGymDesk = () => {
+        const w = window as unknown as Record<string, unknown>;
+        if (w.GymDesk && typeof (w.GymDesk as Record<string, unknown>).init === "function") {
+          (w.GymDesk as { init: () => void }).init();
+        }
+      };
+
+      // If the GymDesk script is already loaded, just re-init. Otherwise load
+      // it manually — on a direct landing-page visit it may not be present yet.
       const w = window as unknown as Record<string, unknown>;
-      if (w.GymDesk && typeof (w.GymDesk as Record<string, unknown>).init === "function") {
-        (w.GymDesk as { init: () => void }).init();
+      if (w.GymDesk) {
+        initGymDesk();
+      } else {
+        const script = document.createElement("script");
+        script.src = "https://app.gymdesk.com/js/widgets.js";
+        script.async = true;
+        script.onload = () => {
+          setTimeout(initGymDesk, 500);
+        };
+        document.head.appendChild(script);
       }
     }
   }, []);

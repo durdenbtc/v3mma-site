@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Schedule from "@/components/Schedule";
 
 export default function FreeTrialOffer() {
   const bookingRef = useRef<HTMLDivElement>(null);
@@ -187,6 +188,9 @@ export default function FreeTrialOffer() {
           </div>
         </div>
       </section>
+
+      {/* Class schedule */}
+      <Schedule />
 
       {/* Booking widget */}
       <section id="book" className="py-14 sm:py-20 bg-[#111d35]">

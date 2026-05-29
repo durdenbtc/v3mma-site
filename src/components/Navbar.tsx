@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,6 +17,13 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  // On any page other than the homepage, in-page hash links (e.g. #schedule)
+  // would resolve against the current path and go nowhere. Point them at the
+  // homepage root instead (e.g. /#schedule) so the menu always works.
+  const sectionHref = (hash: string) =>
+    pathname === "/" ? hash : `/${hash}`;
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -56,14 +64,14 @@ export default function Navbar() {
               {navLinks.map((link) => (
                 <a
                   key={link.href}
-                  href={link.href}
+                  href={sectionHref(link.href)}
                   className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
               <a
-                href="#free-trial"
+                href={sectionHref("#free-trial")}
                 className="ml-4 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all hover:shadow-lg hover:shadow-blue-500/25"
               >
                 FREE TRIAL
@@ -73,7 +81,7 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <div className="flex items-center gap-3 md:hidden">
               <a
-                href="#free-trial"
+                href={sectionHref("#free-trial")}
                 className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all"
               >
                 FREE TRIAL
@@ -134,7 +142,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={sectionHref(link.href)}
                 onClick={() => setIsOpen(false)}
                 className="text-white text-2xl font-semibold hover:text-blue-400 transition-colors"
               >
@@ -142,7 +150,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#free-trial"
+              href={sectionHref("#free-trial")}
               onClick={() => setIsOpen(false)}
               className="mt-4 bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all"
             >
