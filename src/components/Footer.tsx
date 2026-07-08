@@ -85,7 +85,7 @@ export default function Footer() {
             </h3>
             <div className="flex gap-3 mb-6">
               <a
-                href="https://www.facebook.com/v3mmafitness"
+                href="https://www.facebook.com/profile.php?id=61572546220150"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors"
@@ -96,7 +96,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/v3mmafitness"
+                href="https://www.instagram.com/v3_mma"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors"
