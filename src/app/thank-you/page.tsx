@@ -177,7 +177,7 @@ export default function ThankYou() {
 
           <div className="mt-8 flex items-center justify-center gap-6">
             <a
-              href="https://www.instagram.com/v3mmagym/"
+              href="https://www.instagram.com/v3_mma"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
