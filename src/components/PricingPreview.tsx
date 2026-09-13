@@ -104,7 +104,7 @@ export default function PricingPreview() {
                 <>
                   {/* Sticker-style age badge */}
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-3 bg-amber-400 text-[#0f1729] text-xs font-black tracking-wide px-4 py-1 rounded-full shadow-md shadow-amber-400/30">
-                    AGES 4–8
+                    LITTLE WARRIORS
                   </div>
                   {/* Big playful mark in the corner. Clipped by its own layer so the card
                       itself never needs overflow-hidden (which would hide the badge above). */}

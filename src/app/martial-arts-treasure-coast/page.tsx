@@ -84,7 +84,7 @@ export default function TreasureCoastPage() {
         { q: "How far from Stuart or Jensen Beach?", a: "Stuart is about 20 minutes north on I-95, Jensen Beach about 18 minutes. Quick, easy drive with no traffic headaches." },
         { q: "Is there a free trial?", a: "Yes — your first class is completely free. After that, memberships are just $129/month for unlimited access to every class — no contracts, cancel anytime. No obligations, no contracts." },
         { q: "What makes V3 different from other martial arts gyms on the Treasure Coast?", a: "Three things: variety (6 disciplines under one roof), price ($129/month for unlimited everything), and coaching quality (every class coached by a verified professional fighter). Most Treasure Coast gyms offer one discipline at a higher price with larger class sizes." },
-        { q: "Do you have kids classes?", a: "Yes! Our Kids MMA program is designed for ages 6-15 and teaches discipline, fitness, and real martial arts skills in a safe environment." },
+        { q: "Do you have kids classes?", a: "Yes! Our Kids MMA program teaches discipline, fitness, and real martial arts skills in a safe environment. Kids are placed by age, size, and experience." },
       ]}
       relatedDisciplines={[
         { name: "Boxing", href: "/boxing-port-st-lucie" },

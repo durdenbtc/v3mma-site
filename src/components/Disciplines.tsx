@@ -54,7 +54,7 @@ const disciplines = [
   },
   {
     name: "Kids MMA",
-    description: "Kids martial arts classes in Port St. Lucie. Build confidence, discipline, and real skills in a safe, structured environment. Ages 6-15.",
+    description: "Kids martial arts classes in Port St. Lucie. Build confidence, discipline, and real skills in a safe, structured environment.",
     href: "/kids-mma-port-st-lucie",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>

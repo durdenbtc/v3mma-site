@@ -5,7 +5,7 @@ import SiteShell from "@/components/SiteShell";
 export const metadata: Metadata = {
   title: "Kids MMA & Martial Arts Classes in Port St. Lucie, FL | V3 MMA",
   description:
-    "Kids martial arts and MMA classes in Port St. Lucie. Build confidence, discipline, and fitness in a safe, structured environment. Ages 6-15. Taught by a pro fighter. $149/month, no contracts.",
+    "Kids martial arts and MMA classes in Port St. Lucie. Build confidence, discipline, and fitness in a safe, structured environment. Taught by a pro fighter. $149/month, no contracts.",
   keywords: [
     "kids martial arts Port St. Lucie",
     "kids MMA Port St. Lucie",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kids MMA & Martial Arts in Port St. Lucie | V3 MMA",
     description:
-      "Kids martial arts taught by a pro fighter. Confidence, discipline, fitness. Ages 6-15. Free trial.",
+      "Kids martial arts taught by a pro fighter. Confidence, discipline, fitness. Free trial.",
     url: "https://v3mma.com/kids-mma-port-st-lucie",
   },
   alternates: {
@@ -33,7 +33,7 @@ export default function KidsMMAPage() {
     <DisciplinePage
       discipline="Kids MMA"
       tagline="Build confidence, discipline, and real skills — not just participation trophies."
-      heroDescription="Our Kids MMA program teaches children ages 6-15 real martial arts fundamentals in a safe, structured environment. Kids learn striking basics, grappling fundamentals, and self-defense skills while building the confidence, discipline, and physical fitness that carries over into everything else they do."
+      heroDescription="Our Kids MMA program teaches children real martial arts fundamentals in a safe, structured environment. Kids learn striking basics, grappling fundamentals, and self-defense skills while building the confidence, discipline, and physical fitness that carries over into everything else they do."
       imageSrc="/images/6a0ea4d4aa1a.jpg"
       imageAlt="Kids MMA and martial arts classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
@@ -79,7 +79,7 @@ export default function KidsMMAPage() {
         "Goal-setting and pushing through challenges",
       ]}
       classFormat={[
-        { label: "Ages", detail: "6-15 years old — grouped by age and experience when possible" },
+        { label: "Who It's For", detail: "Kids are placed by age, size, and experience — bigger or older kids often train in our adult classes" },
         { label: "Duration", detail: "45-60 minutes — warm-up, technique, drilling, and controlled practice" },
         { label: "Class Size", detail: "Small groups for safety and individual attention from the coach" },
         { label: "Safety", detail: "Controlled environment with appropriate gear — safety is the top priority" },
@@ -87,7 +87,7 @@ export default function KidsMMAPage() {
       faqs={[
         {
           q: "What age can my child start MMA?",
-          a: "Our Kids MMA program in Port St. Lucie accepts children ages 6-15. Kids are grouped by age and experience level when possible to ensure appropriate training partners and instruction.",
+          a: "There's no strict age cutoff — we place kids by age, size, and experience so they get the right training partners. Younger kids train together in the Kids MMA class, and bigger or older kids often move into our adult classes. Bring your child to a free first class and we'll put them where they'll get the most out of it.",
         },
         {
           q: "Is MMA safe for kids?",
