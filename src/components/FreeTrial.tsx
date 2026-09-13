@@ -38,7 +38,7 @@ export default function FreeTrial() {
             Don&apos;t want to book online? Feel free to just come by during any scheduled class — walk-ins are always welcome!
           </p>
           <p className="text-slate-500 text-xs sm:text-sm max-w-md mx-auto">
-            Love it? Our $79 Two-Week Starter gives you unlimited access — and it credits toward your first month&apos;s membership.
+            Love it? Memberships are just $129/month for unlimited access to every class — no contracts, cancel anytime.
           </p>
         </div>
 

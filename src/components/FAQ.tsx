@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Is there a free trial?",
     answer:
-      "Yes! Your very first class is free — just book online or walk in. If you love it, our $79 Two-Week Starter gives you unlimited access to every class for two full weeks. Best part: that $79 applies as a credit toward your first monthly membership, so you're not paying extra to try us out.",
+      "Yes! Your very first class is free — just book online or walk in. If you love it, memberships are just $129/month for unlimited access to every class and every discipline. No contracts, cancel anytime.",
   },
   {
     question: "Is there a contract?",
