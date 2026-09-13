@@ -52,7 +52,7 @@ export default function TreasureCoastPage() {
         },
         {
           title: "Pro Fighter Coaching",
-          description: "Head coach Shane Mistretta is an active professional MMA fighter (4-3 pro, 10-4 amateur) who has competed on FFC and Combat Night. You're learning from someone who actually fights — not just teaches.",
+          description: "Head coach Shane Mistretta is an active professional MMA fighter (5-4 pro, 10-4 amateur) who has competed on FFC and Combat Night. You're learning from someone who actually fights — not just teaches.",
         },
         {
           title: "Small Classes, Real Attention",

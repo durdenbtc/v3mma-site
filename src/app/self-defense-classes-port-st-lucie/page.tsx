@@ -48,7 +48,7 @@ export default function SelfDefensePage() {
         },
         {
           title: "Coached by a Pro Fighter",
-          description: "Shane Mistretta (4-3 pro, 10-4 amateur) has tested these techniques in real fights. He teaches what works — not what looks good on YouTube.",
+          description: "Shane Mistretta (5-4 pro, 10-4 amateur) has tested these techniques in real fights. He teaches what works — not what looks good on YouTube.",
         },
         {
           title: "Small Classes, Real Attention",
