@@ -1,4 +1,16 @@
-const plans = [
+import Link from "next/link";
+
+type Variant = "popular" | "default" | "kids";
+
+const plans: {
+  name: string;
+  price: string;
+  period: string;
+  description: string;
+  features: string[];
+  variant: Variant;
+  cta: string;
+}[] = [
   {
     name: "Silver Monthly",
     price: "$129",
@@ -10,7 +22,8 @@ const plans = [
       "Saturday Open Mat",
       "No contracts — cancel anytime",
     ],
-    popular: true,
+    variant: "popular",
+    cta: "Get Started",
   },
   {
     name: "Gold Monthly",
@@ -23,9 +36,44 @@ const plans = [
       "Personalized training plan",
       "Priority scheduling",
     ],
-    popular: false,
+    variant: "default",
+    cta: "Get Started",
+  },
+  {
+    name: "Kids MMA",
+    price: "$149",
+    period: "/month",
+    description: "Little warriors welcome. Big energy, zero attitude.",
+    features: [
+      "Mon & Wed, 5–6pm",
+      "Confidence, focus & discipline",
+      "Safe, structured, high-energy",
+      "First class free",
+    ],
+    variant: "kids",
+    cta: "Sign Up My Kid",
   },
 ];
+
+const cardStyle: Record<Variant, string> = {
+  popular:
+    "bg-gradient-to-b from-blue-600/20 to-blue-600/5 border-2 border-blue-500/50 shadow-xl shadow-blue-500/10 md:scale-[1.02]",
+  default: "bg-white/[0.03] border border-white/10 hover:border-white/20",
+  kids:
+    "bg-gradient-to-b from-amber-500/15 to-orange-600/5 border-2 border-amber-400/40 hover:border-amber-400/70 shadow-xl shadow-amber-500/10",
+};
+
+const checkStyle: Record<Variant, string> = {
+  popular: "text-blue-400",
+  default: "text-blue-400",
+  kids: "text-amber-400",
+};
+
+const ctaStyle: Record<Variant, string> = {
+  popular: "bg-blue-600 hover:bg-blue-500 text-white hover:shadow-lg hover:shadow-blue-500/25",
+  default: "bg-white/5 hover:bg-white/10 border border-white/10 text-white",
+  kids: "bg-amber-400 hover:bg-amber-300 text-[#0f1729] hover:shadow-lg hover:shadow-amber-400/30",
+};
 
 export default function PricingPreview() {
   return (
@@ -40,20 +88,32 @@ export default function PricingPreview() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-2xl p-6 sm:p-8 transition-all duration-300 ${
-                plan.popular
-                  ? "bg-gradient-to-b from-blue-600/20 to-blue-600/5 border-2 border-blue-500/50 shadow-xl shadow-blue-500/10 scale-[1.02]"
-                  : "bg-white/[0.03] border border-white/10 hover:border-white/20"
-              }`}
+              className={`relative rounded-2xl p-6 sm:p-8 transition-all duration-300 ${cardStyle[plan.variant]}`}
             >
-              {plan.popular && (
+              {plan.variant === "popular" && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full">
                   MOST POPULAR
                 </div>
+              )}
+
+              {plan.variant === "kids" && (
+                <>
+                  {/* Sticker-style age badge */}
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-3 bg-amber-400 text-[#0f1729] text-xs font-black tracking-wide px-4 py-1 rounded-full shadow-md shadow-amber-400/30">
+                    AGES 4–8
+                  </div>
+                  {/* Big playful mark in the corner. Clipped by its own layer so the card
+                      itself never needs overflow-hidden (which would hide the badge above). */}
+                  <div className="absolute inset-0 overflow-hidden rounded-2xl pointer-events-none" aria-hidden="true">
+                    <span className="absolute -right-3 -bottom-4 text-8xl select-none rotate-12 opacity-[0.12]">
+                      🥋
+                    </span>
+                  </div>
+                </>
               )}
 
               <h3 className="text-white font-bold text-lg mb-1">{plan.name}</h3>
@@ -67,7 +127,7 @@ export default function PricingPreview() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3 text-sm">
-                    <svg className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-5 h-5 mt-0.5 shrink-0 ${checkStyle[plan.variant]}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-slate-300">{feature}</span>
@@ -79,20 +139,25 @@ export default function PricingPreview() {
                 href="https://v3-mma.gymdesk.com/signup"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`block w-full text-center py-3 rounded-xl font-semibold text-sm transition-all ${
-                  plan.popular
-                    ? "bg-blue-600 hover:bg-blue-500 text-white hover:shadow-lg hover:shadow-blue-500/25"
-                    : "bg-white/5 hover:bg-white/10 border border-white/10 text-white"
-                }`}
+                className={`relative block w-full text-center py-3 rounded-xl font-semibold text-sm transition-all ${ctaStyle[plan.variant]}`}
               >
-                Get Started
+                {plan.cta}
               </a>
+
+              {plan.variant === "kids" && (
+                <Link
+                  href="/kids-mma-port-st-lucie"
+                  className="relative block text-center text-amber-300/80 hover:text-amber-200 text-xs font-medium mt-3 transition-colors"
+                >
+                  What do kids actually do in class? →
+                </Link>
+              )}
             </div>
           ))}
         </div>
 
         <p className="text-center text-slate-500 text-sm mt-8">
-          Also available: Kids MMA Program ($149/mo) and Private Training packages ($239/4 sessions)
+          Also available: Private Training packages ($239/4 sessions)
         </p>
       </div>
     </section>
