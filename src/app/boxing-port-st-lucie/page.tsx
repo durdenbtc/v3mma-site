@@ -104,7 +104,7 @@ export default function BoxingPage() {
         },
         {
           q: "How much do boxing classes cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited boxing classes are included in our $129/month membership — which also gives you access to every other class we offer. No contracts, cancel anytime. Your first class is free, and our $79 Two-Week Starter credits toward your first month's membership.",
+          a: "At V3 MMA, unlimited boxing classes are included in our $129/month membership — which also gives you access to every other class we offer. No contracts, cancel anytime. Your first class is free.",
         },
       ]}
       relatedDisciplines={[

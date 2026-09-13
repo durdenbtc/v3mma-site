@@ -167,7 +167,7 @@ export default function FreeTrialOffer() {
               {
                 step: "3",
                 title: "Decide If You're In",
-                text: "Love it? Our $79 Two-Week Starter gives you unlimited access — and the $79 credits toward your first month's membership. No contracts.",
+                text: "Love it? Memberships are just $129/month for unlimited access to every class. No contracts, cancel anytime.",
               },
             ].map((item) => (
               <div
@@ -278,7 +278,7 @@ export default function FreeTrialOffer() {
           </h2>
           <p className="text-slate-300 text-base sm:text-lg mb-3">
             Your first class is completely free. No credit card. No
-            commitment. Love it? The $79 Two-Week Starter credits toward your first month&apos;s membership — so you never pay twice.
+            commitment. Love it? Memberships are just $129/month with no contracts — cancel anytime.
           </p>
           <p className="text-slate-400 text-sm mb-8">
             476 NW Peacock Blvd #108, Port St. Lucie, FL 34986 — Right off I-95

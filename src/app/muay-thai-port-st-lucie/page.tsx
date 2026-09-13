@@ -65,7 +65,7 @@ export default function MuayThaiPage() {
         {
           title: "$129/Month — All Disciplines Included",
           description:
-            "Your membership covers Muay Thai plus boxing, kickboxing, BJJ, and every other class at V3 MMA. No contracts. First class free, $79 Two-Week Starter credits toward your first month.",
+            "Your membership covers Muay Thai plus boxing, kickboxing, BJJ, and every other class at V3 MMA. No contracts. First class free.",
         },
       ]}
       whatYouLearn={[
@@ -103,7 +103,7 @@ export default function MuayThaiPage() {
         },
         {
           q: "How much does Muay Thai training cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited Muay Thai classes are $129/month — and that includes access to every other discipline we offer. No contracts, cancel anytime. Your first class is free, and our $79 Two-Week Starter credits toward your first month's membership.",
+          a: "At V3 MMA, unlimited Muay Thai classes are $129/month — and that includes access to every other discipline we offer. No contracts, cancel anytime. Your first class is free.",
         },
       ]}
       relatedDisciplines={[

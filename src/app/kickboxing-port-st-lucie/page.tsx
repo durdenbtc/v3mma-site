@@ -104,7 +104,7 @@ export default function KickboxingPage() {
         },
         {
           q: "How much are kickboxing classes in Port St. Lucie?",
-          a: "Unlimited kickboxing at V3 MMA is $129/month — which includes every other class we offer too. No contracts, no hidden fees. Your first class is free, and our $79 Two-Week Starter credits toward your first month's membership.",
+          a: "Unlimited kickboxing at V3 MMA is $129/month — which includes every other class we offer too. No contracts, no hidden fees. Your first class is free.",
         },
       ]}
       relatedDisciplines={[

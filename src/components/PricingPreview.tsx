@@ -1,17 +1,5 @@
 const plans = [
   {
-    name: "Two Week Starter",
-    price: "$79",
-    period: "one-time",
-    description: "Try everything for 2 weeks — applies toward your first month.",
-    features: [
-      "Unlimited classes for 2 weeks",
-      "All disciplines included",
-      "$79 credits toward your 1st month membership",
-    ],
-    popular: false,
-  },
-  {
     name: "Silver Monthly",
     price: "$129",
     period: "/month",
@@ -52,7 +40,7 @@ export default function PricingPreview() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
