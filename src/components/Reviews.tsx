@@ -71,7 +71,7 @@ export default function Reviews() {
             Port St. Lucie&apos;s Top-Rated MMA Gym
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            37 five-star Google reviews — hear what real members say about training at V3 MMA.
+            39 five-star Google reviews — hear what real members say about training at V3 MMA.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function Reviews() {
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
           >
-            See all 37 reviews on Google &rarr;
+            See all 39 reviews on Google &rarr;
           </a>
         </div>
       </div>

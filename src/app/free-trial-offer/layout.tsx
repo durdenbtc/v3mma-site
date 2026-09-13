@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Free MMA Trial Class | V3 MMA Gym — Port St. Lucie, FL",
@@ -31,26 +30,6 @@ export default function FreeTrialOfferLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-YVK6K48KY2"
-        strategy="afterInteractive"
-      />
-      <Script id="gtag-lp" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-YVK6K48KY2');
-          gtag('config', 'AW-760719511');
-        `}
-      </Script>
-      <Script
-        src="https://app.gymdesk.com/js/widgets.js"
-        strategy="afterInteractive"
-      />
-      {children}
-    </>
-  );
+  // gtag + GymDesk widgets are already loaded by the root layout.
+  return children;
 }

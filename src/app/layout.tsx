@@ -138,38 +138,27 @@ const jsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: "37",
+    reviewCount: "39",
   },
+  // Mirrors the GymDesk class schedule (source of truth). Update here when it changes.
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Thursday"],
-      opens: "09:00",
-      closes: "12:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Thursday"],
+      dayOfWeek: ["Monday", "Wednesday"],
       opens: "17:00",
-      closes: "21:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Tuesday"],
-      opens: "16:00",
       closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Wednesday"],
-      opens: "11:00",
-      closes: "12:00",
+      dayOfWeek: ["Monday", "Wednesday"],
+      opens: "20:00",
+      closes: "21:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Wednesday"],
-      opens: "19:30",
-      closes: "21:00",
+      dayOfWeek: ["Tuesday", "Thursday"],
+      opens: "17:00",
+      closes: "19:00",
     },
     {
       "@type": "OpeningHoursSpecification",

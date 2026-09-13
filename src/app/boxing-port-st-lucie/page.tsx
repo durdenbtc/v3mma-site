@@ -61,7 +61,7 @@ export default function BoxingPage() {
         {
           title: "Coached by a Pro Fighter",
           description:
-            "Shane Mistretta isn't a personal trainer who watched a YouTube course — he's a professional MMA fighter with a 4-3 pro record who's been in the ring and the cage.",
+            "Shane Mistretta isn't a personal trainer who watched a YouTube course — he's a professional MMA fighter with a 5-4 pro record who's been in the ring and the cage.",
         },
         {
           title: "Affordable — $129/Month",

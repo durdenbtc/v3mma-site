@@ -15,20 +15,7 @@ export default function ThankYouLayout({
 }) {
   return (
     <>
-      {/* Google Analytics + Ads base config */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-YVK6K48KY2"
-        strategy="afterInteractive"
-      />
-      <Script id="gtag-thankyou" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-YVK6K48KY2');
-          gtag('config', 'AW-760719511');
-        `}
-      </Script>
+      {/* gtag base config is loaded by the root layout. */}
       {/* Google Ads Conversion — fires on page load */}
       <Script id="gads-conversion" strategy="afterInteractive">
         {`

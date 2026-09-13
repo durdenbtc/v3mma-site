@@ -41,7 +41,7 @@ export default function Coach() {
 
             <p className="text-slate-300 leading-relaxed mb-5">
               Shane isn&apos;t just a coach who watched some YouTube videos &mdash; he&apos;s a
-              professional MMA fighter with a <span className="text-white font-semibold">4-3 pro record</span> and
+              professional MMA fighter with a <span className="text-white font-semibold">5-4 pro record</span> and
               a <span className="text-white font-semibold">10-4 amateur career</span>, competing
               on major regional circuits including FFC and Combat Night.
               He&apos;s been in the cage, taken the hits, and knows what it actually
