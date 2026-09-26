@@ -155,10 +155,17 @@ const jsonLd = {
       closes: "21:00",
     },
     {
+      // Runs straight through: 5pm striking, 6pm grappling, 7pm advanced striking.
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Tuesday", "Thursday"],
       opens: "17:00",
-      closes: "19:00",
+      closes: "20:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Friday"],
+      opens: "17:00",
+      closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
