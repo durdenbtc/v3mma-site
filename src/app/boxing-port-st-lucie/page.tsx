@@ -46,7 +46,7 @@ export default function BoxingPage() {
         {
           title: "Small Classes, Real Coaching",
           description:
-            "Max 15 people per class means your coach actually watches your form, corrects your mistakes, and pushes you to improve. No getting lost in a crowd of 40 people.",
+            "Small, focused groups mean your coach actually watches your form, corrects your mistakes, and pushes you to improve. No getting lost in a crowd of 40 people.",
         },
         {
           title: "Beginner-Friendly",
@@ -81,7 +81,7 @@ export default function BoxingPage() {
       ]}
       classFormat={[
         { label: "Duration", detail: "60 minutes — warm-up, technique, drills, conditioning" },
-        { label: "Class Size", detail: "Max 15 students — you won't get lost in the crowd" },
+        { label: "Class Size", detail: "Small, focused groups — you won't get lost in the crowd" },
         { label: "Equipment", detail: "Gloves and wraps available for beginners — just show up" },
         { label: "Level", detail: "All levels welcome — beginners train alongside experienced members" },
       ]}

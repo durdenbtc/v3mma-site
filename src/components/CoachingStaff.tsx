@@ -35,12 +35,12 @@ const coaches = [
   },
 ];
 
-export default function GuestCoaches() {
+export default function CoachingStaff() {
   return (
     <div className="mt-12 sm:mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-8">
-          Guest &amp; Specialty Coaches
+          The Coaching Staff
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6">

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Free MMA Trial Class | V3 MMA Gym — Port St. Lucie, FL",
   description:
-    "Try a free MMA class in Port St. Lucie. Boxing, kickboxing, Muay Thai & BJJ coached by a pro fighter. Max 15 per class, no experience needed, no obligations. Book your free trial now.",
+    "Try a free MMA class in Port St. Lucie. Boxing, kickboxing, Muay Thai & BJJ coached by a pro fighter. Small, focused groups, no experience needed, no obligations. Book your free trial now.",
   robots: { index: true, follow: true },
   alternates: { canonical: "https://v3mma.com/free-trial-offer" },
   openGraph: {

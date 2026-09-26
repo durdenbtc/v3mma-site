@@ -80,7 +80,7 @@ export default function MMAFitnessPage() {
       ]}
       classFormat={[
         { label: "Duration", detail: "60 minutes — warm-up, technique intro, timed rounds, conditioning finisher" },
-        { label: "Class Size", detail: "Max 15 students — your coach adapts the workout to your fitness level" },
+        { label: "Class Size", detail: "Small, focused groups — your coach adapts the workout to your fitness level" },
         { label: "Equipment", detail: "Everything provided — just bring workout clothes and water" },
         { label: "Contact", detail: "Zero contact — all work is on pads, bags, and bodyweight" },
       ]}

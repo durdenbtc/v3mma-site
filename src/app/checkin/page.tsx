@@ -22,7 +22,8 @@ export default function CheckinPage() {
   const [lastName, setLastName] = useState("");
   const [isMinor, setIsMinor] = useState(false);
   const [guardianName, setGuardianName] = useState("");
-  const [photoRelease, setPhotoRelease] = useState(false);
+  // Section 8 is granted by default — the signer opts out rather than in.
+  const [photoRelease, setPhotoRelease] = useState(true);
   const [scrolledToEnd, setScrolledToEnd] = useState(false);
   const [hasInk, setHasInk] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
@@ -310,12 +311,15 @@ export default function CheckinPage() {
                     />
                     <span className="text-sm">
                       <span className="block text-white font-semibold">
-                        Optional — Section 8, Photo &amp; Media Release
+                        Section 8 — Photo &amp; Media Release
                       </span>
                       <span className="block text-slate-400 mt-0.5">
                         V3 MMA may use photos or video of{" "}
-                        {isMinor ? "my child" : "me"} in marketing and social media. Declining does
-                        not affect the rest of the agreement.
+                        {isMinor ? "my child" : "me"} in marketing and social media.{" "}
+                        <span className="text-white font-medium">
+                          Uncheck this box to decline
+                        </span>{" "}
+                        — it does not affect the rest of the agreement.
                       </span>
                     </span>
                   </label>

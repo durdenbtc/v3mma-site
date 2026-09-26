@@ -65,7 +65,7 @@ export default function FreeTrialOffer() {
           <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             <span className="text-green-300 text-xs sm:text-sm font-semibold">
-              Limited Spots — Max 15 Per Class
+              Limited Spots — Small, Focused Classes
             </span>
           </div>
 
