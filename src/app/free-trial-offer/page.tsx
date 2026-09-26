@@ -140,7 +140,7 @@ export default function FreeTrialOffer() {
                 d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            From $129/mo — No Contracts
+            From $139/mo — No Contracts
           </div>
         </div>
       </section>
@@ -167,7 +167,7 @@ export default function FreeTrialOffer() {
               {
                 step: "3",
                 title: "Decide If You're In",
-                text: "Love it? Memberships are just $129/month for unlimited access to every class. No contracts, cancel anytime.",
+                text: "Love it? Memberships are just $139/month for unlimited access to every class. No contracts, cancel anytime.",
               },
             ].map((item) => (
               <div
@@ -278,7 +278,7 @@ export default function FreeTrialOffer() {
           </h2>
           <p className="text-slate-300 text-base sm:text-lg mb-3">
             Your first class is completely free. No credit card. No
-            commitment. Love it? Memberships are just $129/month with no contracts — cancel anytime.
+            commitment. Love it? Memberships are just $139/month with no contracts — cancel anytime.
           </p>
           <p className="text-slate-400 text-sm mb-8">
             476 NW Peacock Blvd #108, Port St. Lucie, FL 34986 — Right off I-95

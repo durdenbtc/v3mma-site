@@ -57,7 +57,7 @@ export default function BeginnerMMAPage() {
         },
         {
           title: "Most Affordable in the Area",
-          description: "$129/month gets you unlimited access to every class and every discipline. No contracts, no hidden fees. First class free.",
+          description: "$139/month gets you unlimited access to every class and every discipline. No contracts, no hidden fees. First class free.",
         },
       ]}
       whatYouLearn={[
@@ -81,7 +81,7 @@ export default function BeginnerMMAPage() {
         { q: "How often should a beginner train?", a: "We recommend starting with 2-3 classes per week. This gives your body time to recover while building skills consistently. Many members increase to 4-5 sessions as they get more comfortable." },
         { q: "What age do you accept?", a: "Adults of any age are welcome in our regular classes. We also have a dedicated Kids MMA program — kids are placed by age, size, and experience, and bigger or older kids often train right alongside the adults." },
         { q: "What if I don't like it?", a: "No problem at all. Your first class is completely free with no obligations. And memberships are month-to-month with no contracts — you can cancel anytime." },
-        { q: "How is V3 different from other gyms for beginners?", a: "Three things: class size (max 15 vs. 30-40 at most gyms), coaching (an active pro fighter, not a fitness instructor), and price ($129/month for unlimited everything). Most gyms charge more for worse instruction and bigger classes." },
+        { q: "How is V3 different from other gyms for beginners?", a: "Three things: class size (max 15 vs. 30-40 at most gyms), coaching (an active pro fighter, not a fitness instructor), and price ($139/month for unlimited everything). Most gyms charge more for worse instruction and bigger classes." },
       ]}
       relatedDisciplines={[
         { name: "Boxing", href: "/boxing-port-st-lucie" },

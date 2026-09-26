@@ -51,7 +51,7 @@ export default function Hero() {
 
         {/* Price anchor */}
         <p className="text-sm sm:text-base text-slate-400 mb-8 sm:mb-10">
-          Starting at <span className="text-white font-bold text-lg sm:text-xl">$129/month</span> &mdash; No contracts. Cancel anytime.
+          Starting at <span className="text-white font-bold text-lg sm:text-xl">$139/month</span> &mdash; No contracts. Cancel anytime.
         </p>
 
         {/* CTAs */}

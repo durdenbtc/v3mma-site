@@ -6,7 +6,7 @@ import Schedule from "@/components/Schedule";
 export const metadata: Metadata = {
   title: "Kickboxing Classes in Port St. Lucie, FL | V3 MMA Gym & Fitness",
   description:
-    "Kickboxing classes in Port St. Lucie taught by a pro MMA fighter. Learn real striking — punches, kicks, combos — in small classes. Beginner-friendly, $129/month, no contracts. Free trial class.",
+    "Kickboxing classes in Port St. Lucie taught by a pro MMA fighter. Learn real striking — punches, kicks, combos — in small classes. Beginner-friendly, $139/month, no contracts. Free trial class.",
   keywords: [
     "kickboxing classes Port St. Lucie",
     "kickboxing gym Port St. Lucie",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kickboxing Classes in Port St. Lucie | V3 MMA",
     description:
-      "Real kickboxing from a pro fighter. Small classes, proper technique, free trial. $129/month.",
+      "Real kickboxing from a pro fighter. Small classes, proper technique, free trial. $139/month.",
     url: "https://v3mma.com/kickboxing-port-st-lucie",
   },
   alternates: {
@@ -64,7 +64,7 @@ export default function KickboxingPage() {
             "Shane Mistretta has used kickboxing in professional MMA fights. He teaches you the same techniques he uses in the cage — not watered-down fitness moves.",
         },
         {
-          title: "All-Inclusive $129/Month",
+          title: "All-Inclusive $139/Month",
           description:
             "Unlimited kickboxing plus boxing, Muay Thai, BJJ, and every other class we offer. No contracts, cancel anytime. Try us free first.",
         },
@@ -104,7 +104,7 @@ export default function KickboxingPage() {
         },
         {
           q: "How much are kickboxing classes in Port St. Lucie?",
-          a: "Unlimited kickboxing at V3 MMA is $129/month — which includes every other class we offer too. No contracts, no hidden fees. Your first class is free.",
+          a: "Unlimited kickboxing at V3 MMA is $139/month — which includes every other class we offer too. No contracts, no hidden fees. Your first class is free.",
         },
       ]}
       relatedDisciplines={[
