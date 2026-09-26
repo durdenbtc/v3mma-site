@@ -5,7 +5,7 @@ import SiteShell from "@/components/SiteShell";
 export const metadata: Metadata = {
   title: "Muay Thai Classes in Port St. Lucie, FL | V3 MMA Gym & Fitness",
   description:
-    "Muay Thai training in Port St. Lucie with a professional MMA fighter coach. Learn the art of eight limbs — punches, kicks, elbows, knees, and clinch work. Small classes, $129/month, no contracts.",
+    "Muay Thai training in Port St. Lucie with a professional MMA fighter coach. Learn the art of eight limbs — punches, kicks, elbows, knees, and clinch work. Small classes, $139/month, no contracts.",
   keywords: [
     "Muay Thai classes Port St. Lucie",
     "Muay Thai gym Port St. Lucie",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Muay Thai Classes in Port St. Lucie | V3 MMA",
     description:
-      "Train Muay Thai with a pro fighter. Punches, kicks, elbows, knees. Small classes, free trial. $129/month.",
+      "Train Muay Thai with a pro fighter. Punches, kicks, elbows, knees. Small classes, free trial. $139/month.",
     url: "https://v3mma.com/muay-thai-port-st-lucie",
   },
   alternates: {
@@ -63,7 +63,7 @@ export default function MuayThaiPage() {
             "Coach Shane Mistretta uses Muay Thai in professional MMA competition. He teaches the same clinch entries, knee strikes, and kick setups he uses in the cage.",
         },
         {
-          title: "$129/Month — All Disciplines Included",
+          title: "$139/Month — All Disciplines Included",
           description:
             "Your membership covers Muay Thai plus boxing, kickboxing, BJJ, and every other class at V3 MMA. No contracts. First class free.",
         },
@@ -103,7 +103,7 @@ export default function MuayThaiPage() {
         },
         {
           q: "How much does Muay Thai training cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited Muay Thai classes are $129/month — and that includes access to every other discipline we offer. No contracts, cancel anytime. Your first class is free.",
+          a: "At V3 MMA, unlimited Muay Thai classes are $139/month — and that includes access to every other discipline we offer. No contracts, cancel anytime. Your first class is free.",
         },
       ]}
       relatedDisciplines={[

@@ -31,3 +31,15 @@ body {
   background: var(--navy-light);
   border-radius: 4px;
 }
+
+/* Metallic sheen sweep — the Silver pricing card's "backbone of the gym" flair. */
+@keyframes sheen {
+  0%   { transform: translateX(-130%) skewX(-20deg); }
+  100% { transform: translateX(330%) skewX(-20deg); }
+}
+.animate-sheen {
+  animation: sheen 5.5s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-sheen { animation: none; opacity: 0; }
+}

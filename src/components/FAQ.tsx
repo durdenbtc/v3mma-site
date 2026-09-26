@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Is there a free trial?",
     answer:
-      "Yes! Your very first class is free — just book online or walk in. If you love it, memberships are just $129/month for unlimited access to every class and every discipline. No contracts, cancel anytime.",
+      "Yes! Your very first class is free — just book online or walk in. If you love it, memberships are just $139/month for unlimited access to every class and every discipline. No contracts, cancel anytime.",
   },
   {
     question: "Is there a contract?",
@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "What makes V3 different from other MMA gyms in Port St. Lucie?",
     answer:
-      "Three things: class size (max 15 people, so you actually get coached), price ($129/month for unlimited access to all disciplines), and our coaching (Shane Mistretta is an active professional fighter, not just a fitness instructor). V3 MMA is the most affordable semi-private MMA gym in Port St. Lucie — and the only one where every class is coached by a verified pro fighter.",
+      "Three things: class size (max 15 people, so you actually get coached), price ($139/month for unlimited access to all disciplines), and our coaching (Shane Mistretta is an active professional fighter, not just a fitness instructor). V3 MMA is the most affordable semi-private MMA gym in Port St. Lucie — and the only one where every class is coached by a verified pro fighter.",
   },
   {
     question: "Where is V3 MMA located in Port St. Lucie?",

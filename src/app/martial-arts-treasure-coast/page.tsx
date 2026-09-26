@@ -34,7 +34,7 @@ export default function TreasureCoastPage() {
       discipline="Martial Arts"
       tagline="The Treasure Coast's best-kept secret in MMA training."
       seoLocation="the Treasure Coast"
-      heroDescription="V3 MMA is located in Port St. Lucie right off I-95, making it the most accessible MMA gym for the entire Treasure Coast region. Whether you're coming from Fort Pierce, Stuart, Jensen Beach, or anywhere in St. Lucie County — you're 15-20 minutes from professional-level MMA training at $129/month. Six disciplines, one membership, no contracts."
+      heroDescription="V3 MMA is located in Port St. Lucie right off I-95, making it the most accessible MMA gym for the entire Treasure Coast region. Whether you're coming from Fort Pierce, Stuart, Jensen Beach, or anywhere in St. Lucie County — you're 15-20 minutes from professional-level MMA training at $139/month. Six disciplines, one membership, no contracts."
       imageSrc="/images/142dd1814f7b.jpg"
       imageAlt="Martial arts gym serving the Treasure Coast — V3 MMA in Port St. Lucie, FL"
       benefits={[
@@ -48,7 +48,7 @@ export default function TreasureCoastPage() {
         },
         {
           title: "Most Affordable on the Treasure Coast",
-          description: "$129/month for unlimited access to every class and every discipline. No contracts, cancel anytime. Compare that to $150-250/month at other Treasure Coast martial arts gyms — most of which only offer one discipline.",
+          description: "$139/month for unlimited access to every class and every discipline. No contracts, cancel anytime. Compare that to $150-250/month at other Treasure Coast martial arts gyms — most of which only offer one discipline.",
         },
         {
           title: "Pro Fighter Coaching",
@@ -82,8 +82,8 @@ export default function TreasureCoastPage() {
         { q: "Where exactly is V3 MMA located?", a: "476 NW Peacock Blvd #108, Port St. Lucie, FL 34986. We're right off the Peacock Boulevard exit on I-95, with free parking. Easy access from anywhere on the Treasure Coast." },
         { q: "How far is it from Fort Pierce?", a: "About 12 minutes south on I-95. Take exit 121 (Peacock Blvd) and we're right there in the shopping plaza." },
         { q: "How far from Stuart or Jensen Beach?", a: "Stuart is about 20 minutes north on I-95, Jensen Beach about 18 minutes. Quick, easy drive with no traffic headaches." },
-        { q: "Is there a free trial?", a: "Yes — your first class is completely free. After that, memberships are just $129/month for unlimited access to every class — no contracts, cancel anytime. No obligations, no contracts." },
-        { q: "What makes V3 different from other martial arts gyms on the Treasure Coast?", a: "Three things: variety (6 disciplines under one roof), price ($129/month for unlimited everything), and coaching quality (every class coached by a verified professional fighter). Most Treasure Coast gyms offer one discipline at a higher price with larger class sizes." },
+        { q: "Is there a free trial?", a: "Yes — your first class is completely free. After that, memberships are just $139/month for unlimited access to every class — no contracts, cancel anytime. No obligations, no contracts." },
+        { q: "What makes V3 different from other martial arts gyms on the Treasure Coast?", a: "Three things: variety (6 disciplines under one roof), price ($139/month for unlimited everything), and coaching quality (every class coached by a verified professional fighter). Most Treasure Coast gyms offer one discipline at a higher price with larger class sizes." },
         { q: "Do you have kids classes?", a: "Yes! Our Kids MMA program teaches discipline, fitness, and real martial arts skills in a safe environment. Kids are placed by age, size, and experience." },
       ]}
       relatedDisciplines={[
