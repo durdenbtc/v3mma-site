@@ -3,6 +3,8 @@ import Link from "next/link";
 const disciplines = [
   {
     name: "Boxing",
+    color: "red" as const,
+    tag: "Hands & Footwork",
     description: "Learn boxing technique, footwork, and combinations in Port St. Lucie. Great for fitness and self-defense at any level.",
     href: "/boxing-port-st-lucie",
     icon: (
@@ -13,6 +15,8 @@ const disciplines = [
   },
   {
     name: "Kickboxing",
+    color: "sky" as const,
+    tag: "Hands & Kicks",
     description: "High-energy kickboxing classes combining punches and kicks. Build power, speed, and endurance with real coaching.",
     href: "/kickboxing-port-st-lucie",
     icon: (
@@ -23,6 +27,8 @@ const disciplines = [
   },
   {
     name: "Muay Thai",
+    color: "amber" as const,
+    tag: "The Art of 8 Limbs",
     description: "Train the art of eight limbs — punches, kicks, elbows, and knees. Authentic Muay Thai classes on the Treasure Coast.",
     href: "/muay-thai-port-st-lucie",
     icon: (
@@ -34,6 +40,8 @@ const disciplines = [
   },
   {
     name: "No-Gi BJJ",
+    color: "violet" as const,
+    tag: "Ground Game",
     description: "No-Gi Brazilian Jiu-Jitsu classes twice weekly. Learn submissions, sweeps, and ground control in Port St. Lucie.",
     href: "/bjj-port-st-lucie",
     icon: (
@@ -44,6 +52,8 @@ const disciplines = [
   },
   {
     name: "MMA Fitness",
+    color: "rose" as const,
+    tag: "Conditioning",
     description: "Full-body MMA conditioning covering boxing, Muay Thai, kickboxing, and wrestling. Burn calories and build functional strength.",
     href: "/mma-fitness-port-st-lucie",
     icon: (
@@ -54,6 +64,8 @@ const disciplines = [
   },
   {
     name: "Kids MMA",
+    color: "emerald" as const,
+    tag: "Little Warriors",
     description: "Kids martial arts classes in Port St. Lucie. Build confidence, discipline, and real skills in a safe, structured environment.",
     href: "/kids-mma-port-st-lucie",
     icon: (
@@ -64,11 +76,63 @@ const disciplines = [
   },
 ];
 
+
+/**
+ * Each discipline carries its own colour so the grid reads as six distinct
+ * programs rather than one blue block. Full class strings (not interpolated)
+ * so Tailwind can see them at build time.
+ */
+type Accent = "red" | "sky" | "amber" | "violet" | "rose" | "emerald";
+
+const theme: Record<Accent, { card: string; tile: string; tag: string; link: string }> = {
+  red: {
+    card: "from-red-500/10 border-red-500/20 hover:border-red-400/50 hover:shadow-red-500/10",
+    tile: "bg-red-500/15 text-red-400 group-hover:bg-red-500/25",
+    tag: "text-red-300/90",
+    link: "text-red-300",
+  },
+  sky: {
+    card: "from-sky-500/10 border-sky-500/20 hover:border-sky-400/50 hover:shadow-sky-500/10",
+    tile: "bg-sky-500/15 text-sky-400 group-hover:bg-sky-500/25",
+    tag: "text-sky-300/90",
+    link: "text-sky-300",
+  },
+  amber: {
+    card: "from-amber-500/10 border-amber-500/20 hover:border-amber-400/50 hover:shadow-amber-500/10",
+    tile: "bg-amber-500/15 text-amber-400 group-hover:bg-amber-500/25",
+    tag: "text-amber-300/90",
+    link: "text-amber-300",
+  },
+  violet: {
+    card: "from-violet-500/10 border-violet-500/20 hover:border-violet-400/50 hover:shadow-violet-500/10",
+    tile: "bg-violet-500/15 text-violet-400 group-hover:bg-violet-500/25",
+    tag: "text-violet-300/90",
+    link: "text-violet-300",
+  },
+  rose: {
+    card: "from-rose-500/10 border-rose-500/20 hover:border-rose-400/50 hover:shadow-rose-500/10",
+    tile: "bg-rose-500/15 text-rose-400 group-hover:bg-rose-500/25",
+    tag: "text-rose-300/90",
+    link: "text-rose-300",
+  },
+  emerald: {
+    card: "from-emerald-500/10 border-emerald-500/20 hover:border-emerald-400/50 hover:shadow-emerald-500/10",
+    tile: "bg-emerald-500/15 text-emerald-400 group-hover:bg-emerald-500/25",
+    tag: "text-emerald-300/90",
+    link: "text-emerald-300",
+  },
+};
+
 export default function Disciplines() {
   return (
     <section id="disciplines" className="py-16 sm:py-24 bg-[#0f1729]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
+          <p className="text-xs font-black uppercase tracking-[0.25em] mb-3">
+            <span className="bg-gradient-to-r from-red-400 via-amber-400 to-emerald-400 bg-clip-text text-transparent">
+              Six Disciplines &middot; One Membership
+            </span>
+          </p>
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
             Martial Arts Classes in Port St. Lucie
           </h2>
@@ -78,22 +142,43 @@ export default function Disciplines() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {disciplines.map((d) => (
-            <Link
-              key={d.name}
-              href={d.href}
-              className="group bg-white/[0.03] hover:bg-white/[0.06] border border-white/5 hover:border-blue-500/30 rounded-xl p-6 sm:p-8 transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:bg-blue-500/20 transition-colors">
-                {d.icon}
-              </div>
-              <h3 className="text-white font-bold text-lg mb-2">{d.name}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{d.description}</p>
-              <span className="text-blue-400 text-sm font-medium mt-3 inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                Learn more <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </span>
-            </Link>
-          ))}
+          {disciplines.map((d) => {
+            const t = theme[d.color];
+            return (
+              <Link
+                key={d.name}
+                href={d.href}
+                className={`group relative flex flex-col bg-gradient-to-br to-transparent border rounded-xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${t.card}`}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className={`w-12 h-12 shrink-0 rounded-lg flex items-center justify-center transition-colors ${t.tile}`}>
+                    {d.icon}
+                  </div>
+                  <span className={`text-[10px] font-black uppercase tracking-[0.15em] ${t.tag}`}>
+                    {d.tag}
+                  </span>
+                </div>
+
+                <h3 className="text-white font-bold text-lg mb-2">{d.name}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">{d.description}</p>
+
+                {/* mt-auto keeps the link pinned to the bottom so cards of
+                    different text lengths still line up. */}
+                <span className={`text-sm font-semibold mt-auto pt-4 inline-flex items-center gap-1 ${t.link}`}>
+                  Learn more
+                  <svg
+                    className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

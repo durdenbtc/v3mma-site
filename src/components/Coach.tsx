@@ -1,5 +1,5 @@
 import Image from "next/image";
-import GuestCoaches from "./GuestCoaches";
+import CoachingStaff from "./CoachingStaff";
 
 export default function Coach() {
   return (
@@ -141,8 +141,8 @@ export default function Coach() {
           </p>
         </div>
 
-        {/* Guest / Specialty Coaches */}
-        <GuestCoaches />
+        {/* The rest of the coaching staff */}
+        <CoachingStaff />
       </div>
     </section>
   );

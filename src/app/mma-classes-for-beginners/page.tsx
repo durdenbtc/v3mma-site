@@ -5,7 +5,7 @@ import DisciplinePage from "@/components/DisciplinePage";
 export const metadata: Metadata = {
   title: "MMA Classes for Beginners | V3 MMA Gym — Port St. Lucie, FL",
   description:
-    "Never done MMA? Start here. V3 MMA in Port St. Lucie offers beginner-friendly boxing, kickboxing, Muay Thai & BJJ classes with max 15 students. Coached by a pro fighter who teaches you from scratch. Free trial class.",
+    "Never done MMA? Start here. V3 MMA in Port St. Lucie offers beginner-friendly boxing, kickboxing, Muay Thai & BJJ classes in small, focused groups. Coached by a pro fighter who teaches you from scratch. Free trial class.",
   keywords: [
     "MMA classes for beginners",
     "beginner MMA classes Port St. Lucie",
@@ -31,7 +31,7 @@ export default function BeginnerMMAPage() {
     <DisciplinePage
       discipline="Beginner MMA"
       tagline="Never trained before? Neither had most of our members."
-      heroDescription="V3 MMA is built for people starting from zero. Our classes cover boxing, kickboxing, Muay Thai, wrestling, and BJJ — and every single one is designed to be accessible to complete beginners. With a max of 15 people per class, you won't get lost in a crowd. Coach Shane Mistretta (professional MMA fighter) teaches every technique from scratch and personally corrects your form."
+      heroDescription="V3 MMA is built for people starting from zero. Our classes cover boxing, kickboxing, Muay Thai, wrestling, and BJJ — and every single one is designed to be accessible to complete beginners. With small, focused groups, you won't get lost in a crowd. Coach Shane Mistretta (professional MMA fighter) teaches every technique from scratch and personally corrects your form."
       imageSrc="/images/142dd1814f7b.jpg"
       imageAlt="Beginner MMA classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
@@ -41,7 +41,7 @@ export default function BeginnerMMAPage() {
         },
         {
           title: "Small Classes = Real Coaching",
-          description: "Max 15 per class. Your coach actually watches you, corrects your form, and makes sure you're learning properly. It's like semi-private training at a fraction of the cost.",
+          description: "Small, focused groups. Your coach actually watches you, corrects your form, and makes sure you're learning properly. It's like semi-private training at a fraction of the cost.",
         },
         {
           title: "Learn Multiple Disciplines",
@@ -73,7 +73,7 @@ export default function BeginnerMMAPage() {
         { label: "Who It's For", detail: "Complete beginners to intermediate students. No experience, athletic background, or fitness level required." },
         { label: "Class Structure", detail: "Warm-up, technique instruction with demonstration, partner drills at your pace, and conditioning. Coach guides you every step." },
         { label: "What to Bring", detail: "Comfortable workout clothes. We provide gloves and wraps for beginners. Free water and Gatorade included." },
-        { label: "Class Size", detail: "Max 15 students per class. Small enough that the coach can give you real, individualized attention." },
+        { label: "Class Size", detail: "Small, focused groups — the coach can give you real, individualized attention." },
       ]}
       faqs={[
         { q: "I'm completely out of shape — can I still start?", a: "Yes. Many members joined V3 specifically to get in shape. Classes are scalable — you work at your own pace, and your fitness improves naturally as you train. There's no minimum fitness requirement." },
@@ -81,7 +81,7 @@ export default function BeginnerMMAPage() {
         { q: "How often should a beginner train?", a: "We recommend starting with 2-3 classes per week. This gives your body time to recover while building skills consistently. Many members increase to 4-5 sessions as they get more comfortable." },
         { q: "What age do you accept?", a: "Adults of any age are welcome in our regular classes. We also have a dedicated Kids MMA program — kids are placed by age, size, and experience, and bigger or older kids often train right alongside the adults." },
         { q: "What if I don't like it?", a: "No problem at all. Your first class is completely free with no obligations. And memberships are month-to-month with no contracts — you can cancel anytime." },
-        { q: "How is V3 different from other gyms for beginners?", a: "Three things: class size (max 15 vs. 30-40 at most gyms), coaching (an active pro fighter, not a fitness instructor), and price ($139/month for unlimited everything). Most gyms charge more for worse instruction and bigger classes." },
+        { q: "How is V3 different from other gyms for beginners?", a: "Three things: class size (small, focused groups vs. 30-40 at most gyms), coaching (an active pro fighter, not a fitness instructor), and price ($139/month for unlimited everything). Most gyms charge more for worse instruction and bigger classes." },
       ]}
       relatedDisciplines={[
         { name: "Boxing", href: "/boxing-port-st-lucie" },

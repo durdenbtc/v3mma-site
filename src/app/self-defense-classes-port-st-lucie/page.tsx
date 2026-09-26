@@ -52,7 +52,7 @@ export default function SelfDefensePage() {
         },
         {
           title: "Small Classes, Real Attention",
-          description: "Max 15 per class means you actually get coached. No getting lost in a crowd. Every student gets hands-on corrections and personalized feedback.",
+          description: "Small, focused groups mean you actually get coached. No getting lost in a crowd. Every student gets hands-on corrections and personalized feedback.",
         },
         {
           title: "Safe for All Levels",

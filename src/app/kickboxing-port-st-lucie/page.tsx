@@ -51,7 +51,7 @@ export default function KickboxingPage() {
         {
           title: "Small Classes, Personal Attention",
           description:
-            "Max 15 per class. Your coach watches your form, fixes your technique, and pushes you to improve — not just yells 'keep going!' from across the room.",
+            "Small, focused groups. Your coach watches your form, fixes your technique, and pushes you to improve — not just yells 'keep going!' from across the room.",
         },
         {
           title: "Burn 600-1,000 Calories Per Class",
@@ -81,7 +81,7 @@ export default function KickboxingPage() {
       ]}
       classFormat={[
         { label: "Duration", detail: "60 minutes — warm-up, technique drilling, pad/bag rounds, conditioning" },
-        { label: "Class Size", detail: "Max 15 students — personal attention from your coach" },
+        { label: "Class Size", detail: "Small, focused groups — personal attention from your coach" },
         { label: "Equipment", detail: "Gloves provided for beginners — shin guards available when you're ready to spar" },
         { label: "Level", detail: "All levels — we scale intensity and complexity to your experience" },
       ]}

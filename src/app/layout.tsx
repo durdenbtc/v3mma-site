@@ -66,7 +66,7 @@ const faqJsonLd = {
       name: "I have no experience — can I still join V3 MMA?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! Most of our members started with zero martial arts experience. Our classes in Port St. Lucie are designed to be beginner-friendly, and with a max of 15 people per class, you get real attention from the coach. We teach everything from scratch.",
+        text: "Absolutely! Most of our members started with zero martial arts experience. Our classes in Port St. Lucie are designed to be beginner-friendly, and with small, focused groups, you get real attention from the coach. We teach everything from scratch.",
       },
     },
     {
@@ -98,7 +98,7 @@ const faqJsonLd = {
       name: "What makes V3 MMA different from other gyms in Port St. Lucie?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Three things: class size (max 15 people per session), price ($139/month for unlimited access to all disciplines), and coaching (Shane Mistretta is an active professional MMA fighter, not just a fitness instructor). V3 MMA is the most affordable semi-private MMA gym in Port St. Lucie and the only one where every class is coached by a verified pro fighter.",
+        text: "Three things: class size (small, focused groups), price ($139/month for unlimited access to all disciplines), and coaching (Shane Mistretta is an active professional MMA fighter, not just a fitness instructor). V3 MMA is the most affordable semi-private MMA gym in Port St. Lucie and the only one where every class is coached by a verified pro fighter.",
       },
     },
     {

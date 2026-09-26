@@ -5,7 +5,7 @@ import DisciplinePage from "@/components/DisciplinePage";
 export const metadata: Metadata = {
   title: "Women's Kickboxing Classes in Port St. Lucie, FL | V3 MMA Gym",
   description:
-    "Kickboxing classes for women in Port St. Lucie at V3 MMA. Learn real striking technique, burn calories, and build confidence in a supportive environment. Max 15 per class, coached by a pro fighter. Free trial.",
+    "Kickboxing classes for women in Port St. Lucie at V3 MMA. Learn real striking technique, burn calories, and build confidence in a supportive environment. Small, focused groups, coached by a pro fighter. Free trial.",
   keywords: [
     "women kickboxing Port St. Lucie",
     "womens kickboxing classes near me",
@@ -30,7 +30,7 @@ export default function WomenKickboxingPage() {
     <DisciplinePage
       discipline="Women's Kickboxing"
       tagline="Real technique. Real fitness. Not a dance class."
-      heroDescription="V3 MMA's kickboxing classes aren't watered-down cardio kickboxing — you'll learn actual striking technique from a professional fighter while getting an incredible full-body workout. Our co-ed classes are welcoming and supportive, with women making up a growing part of our community. Max 15 per class means you get real coaching, not just someone yelling at you to keep moving."
+      heroDescription="V3 MMA's kickboxing classes aren't watered-down cardio kickboxing — you'll learn actual striking technique from a professional fighter while getting an incredible full-body workout. Our co-ed classes are welcoming and supportive, with women making up a growing part of our community. Small, focused groups mean you get real coaching, not just someone yelling at you to keep moving."
       imageSrc="/images/01bfa571c65b.jpg"
       imageAlt="Women's kickboxing classes at V3 MMA in Port St. Lucie, FL"
       benefits={[
@@ -56,7 +56,7 @@ export default function WomenKickboxingPage() {
         },
         {
           title: "Small Classes — You Won't Get Ignored",
-          description: "With a max of 15 per class, our coach can actually watch your form, give corrections, and make sure you're progressing. It's like semi-private training at a group class price.",
+          description: "With small, focused groups, our coach can actually watch your form, give corrections, and make sure you're progressing. It's like semi-private training at a group class price.",
         },
       ]}
       whatYouLearn={[

@@ -50,7 +50,7 @@ export default function BJJPage() {
         {
           title: "Small Classes, Real Instruction",
           description:
-            "Max 15 per class. Your coach walks you through every technique, drills it with you, and watches your live rolling. No sitting on the sideline waiting for 5 minutes of attention.",
+            "Small, focused groups. Your coach walks you through every technique, drills it with you, and watches your live rolling. No sitting on the sideline waiting for 5 minutes of attention.",
         },
         {
           title: "Saturday Open Mat",
@@ -80,7 +80,7 @@ export default function BJJPage() {
       ]}
       classFormat={[
         { label: "Duration", detail: "60 minutes — warm-up, technique instruction, positional drilling, live rolling" },
-        { label: "Class Size", detail: "Max 15 students — plenty of mat space and coaching attention" },
+        { label: "Class Size", detail: "Small, focused groups — plenty of mat space and coaching attention" },
         { label: "Equipment", detail: "No gi needed — wear a rash guard or t-shirt and shorts (no pockets or zippers)" },
         { label: "Level", detail: "All levels — structured drilling followed by rolling with appropriate partners" },
       ]}

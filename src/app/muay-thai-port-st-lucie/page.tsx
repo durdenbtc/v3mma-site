@@ -50,7 +50,7 @@ export default function MuayThaiPage() {
         {
           title: "Small Classes, Expert Coaching",
           description:
-            "Max 15 students per class with a professional fighter coaching every session. You get hands-on correction and personalized feedback on your technique.",
+            "Small, focused groups, with a professional fighter coaching every session. You get hands-on correction and personalized feedback on your technique.",
         },
         {
           title: "Devastating Self-Defense",
@@ -80,7 +80,7 @@ export default function MuayThaiPage() {
       ]}
       classFormat={[
         { label: "Duration", detail: "60 minutes — Thai warm-up, technique, pad rounds, clinch work, conditioning" },
-        { label: "Class Size", detail: "Max 15 students — enough room to kick and get real coaching" },
+        { label: "Class Size", detail: "Small, focused groups — enough room to kick and get real coaching" },
         { label: "Equipment", detail: "Gloves and shin guards available for beginners — just bring yourself" },
         { label: "Level", detail: "All levels — beginners learn fundamentals while experienced students sharpen technique" },
       ]}
