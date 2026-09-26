@@ -5,3 +5,6 @@ out/
 .DS_Store
 *.tsbuildinfo
 .env*
+# ...but the production config must reach the build: this is a static export, so
+# NEXT_PUBLIC_* is inlined by `next build` inside the image. It holds no secrets.
+!.env.production
