@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { silverPrice } from "@/lib/pricing";
 
 export default function VideoShowcase() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -86,7 +87,7 @@ export default function VideoShowcase() {
               <p className="text-slate-300 text-xs sm:text-sm">Max Class Size</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl p-4 sm:p-5">
-              <p className="text-2xl sm:text-3xl font-black text-white mb-1">$139</p>
+              <p className="text-2xl sm:text-3xl font-black text-white mb-1">{silverPrice}</p>
               <p className="text-slate-300 text-xs sm:text-sm">/mo &bull; No Contracts</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl p-4 sm:p-5">

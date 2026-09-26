@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import DisciplinePage from "@/components/DisciplinePage";
 import SiteShell from "@/components/SiteShell";
+import { silverPrice } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "MMA Fitness Classes in Port St. Lucie, FL | V3 MMA Gym & Fitness",
   description:
-    "MMA-style fitness classes in Port St. Lucie. Full-body conditioning using real martial arts techniques — boxing, kickboxing, and grappling drills. No fighting required. $139/month, no contracts.",
+    `MMA-style fitness classes in Port St. Lucie. Full-body conditioning using real martial arts techniques — boxing, kickboxing, and grappling drills. No fighting required. ${silverPrice}/month, no contracts.`,
   keywords: [
     "MMA fitness Port St. Lucie",
     "MMA gym Port St. Lucie",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MMA Fitness Classes in Port St. Lucie | V3 MMA",
     description:
-      "Train like a fighter, no fighting required. MMA-style fitness classes. Free trial. $139/month.",
+      `Train like a fighter, no fighting required. MMA-style fitness classes. Free trial. ${silverPrice}/month.`,
     url: "https://v3mma.com/mma-fitness-port-st-lucie",
   },
   alternates: {
@@ -63,7 +64,7 @@ export default function MMAFitnessPage() {
             "Even in a fitness-focused class, having a real fighter coach makes the difference. Shane ensures your technique is correct so you get maximum benefit from every movement.",
         },
         {
-          title: "$139/Month — Everything Included",
+          title: `${silverPrice}/Month — Everything Included`,
           description:
             "MMA Fitness is included in your membership along with boxing, kickboxing, Muay Thai, and BJJ. Many members start with MMA Fitness and eventually try the technique classes too.",
         },
@@ -103,7 +104,7 @@ export default function MMAFitnessPage() {
         },
         {
           q: "How much does MMA Fitness cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited MMA Fitness classes are $139/month — which also gives you access to every other class including boxing, kickboxing, Muay Thai, and BJJ. No contracts, cancel anytime. Your first class is free.",
+          a: `At V3 MMA, unlimited MMA Fitness classes are ${silverPrice}/month — which also gives you access to every other class including boxing, kickboxing, Muay Thai, and BJJ. No contracts, cancel anytime. Your first class is free.`,
         },
       ]}
       relatedDisciplines={[

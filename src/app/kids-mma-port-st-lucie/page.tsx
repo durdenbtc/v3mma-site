@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import DisciplinePage from "@/components/DisciplinePage";
 import SiteShell from "@/components/SiteShell";
+import { kidsPrice } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "Kids MMA & Martial Arts Classes in Port St. Lucie, FL | V3 MMA",
   description:
-    "Kids martial arts and MMA classes in Port St. Lucie. Build confidence, discipline, and fitness in a safe, structured environment. Taught by a pro fighter. $149/month, no contracts.",
+    `Kids martial arts and MMA classes in Port St. Lucie. Build confidence, discipline, and fitness in a safe, structured environment. Taught by a pro fighter. ${kidsPrice}/month, no contracts.`,
   keywords: [
     "kids martial arts Port St. Lucie",
     "kids MMA Port St. Lucie",
@@ -63,7 +64,7 @@ export default function KidsMMAPage() {
             "Shane Mistretta brings the same expertise to kids classes that he brings to adults — scaled appropriately for young athletes. Kids get instruction from a real professional fighter, not a teen with a black belt.",
         },
         {
-          title: "$149/Month — No Long-Term Contracts",
+          title: `${kidsPrice}/Month — No Long-Term Contracts`,
           description:
             "No belt testing fees, no equipment packages, no multi-year commitments. Just quality martial arts instruction for your child at a straightforward monthly price.",
         },
@@ -103,7 +104,7 @@ export default function KidsMMAPage() {
         },
         {
           q: "How much are kids martial arts classes in Port St. Lucie?",
-          a: "The V3 MMA Kids Program is $149/month with no contracts and no hidden fees. No belt testing fees, no required equipment purchases. Your child's first class is free so they can experience it before you commit.",
+          a: `The V3 MMA Kids Program is ${kidsPrice}/month with no contracts and no hidden fees. No belt testing fees, no required equipment purchases. Your child's first class is free so they can experience it before you commit.`,
         },
       ]}
       relatedDisciplines={[

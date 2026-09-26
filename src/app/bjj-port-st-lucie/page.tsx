@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import DisciplinePage from "@/components/DisciplinePage";
 import SiteShell from "@/components/SiteShell";
+import { silverPrice } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "No-Gi BJJ Classes in Port St. Lucie, FL | V3 MMA Gym & Fitness",
   description:
-    "No-Gi Brazilian Jiu-Jitsu classes in Port St. Lucie. Learn submissions, sweeps, and ground control in small classes coached by a pro MMA fighter. Beginner-friendly, $139/month, no contracts.",
+    `No-Gi Brazilian Jiu-Jitsu classes in Port St. Lucie. Learn submissions, sweeps, and ground control in small classes coached by a pro MMA fighter. Beginner-friendly, ${silverPrice}/month, no contracts.`,
   keywords: [
     "BJJ classes Port St. Lucie",
     "Brazilian Jiu Jitsu Port St. Lucie",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "No-Gi BJJ Classes in Port St. Lucie | V3 MMA",
     description:
-      "Learn Brazilian Jiu-Jitsu from a pro fighter. No-gi grappling, small classes, free trial. $139/month.",
+      `Learn Brazilian Jiu-Jitsu from a pro fighter. No-gi grappling, small classes, free trial. ${silverPrice}/month.`,
     url: "https://v3mma.com/bjj-port-st-lucie",
   },
   alternates: {
@@ -63,7 +64,7 @@ export default function BJJPage() {
             "Shane Mistretta uses BJJ in professional MMA fights. He teaches the grappling that actually works under pressure — not just tournament-only moves that fall apart when someone's throwing punches.",
         },
         {
-          title: "All-In at $139/Month",
+          title: `All-In at ${silverPrice}/Month`,
           description:
             "Unlimited BJJ classes plus striking, MMA fitness, and everything else. No gi to buy, no belt test fees, no contracts. Just show up and train.",
         },
@@ -99,11 +100,11 @@ export default function BJJPage() {
         },
         {
           q: "Where can I train BJJ in Port St. Lucie?",
-          a: "V3 MMA offers no-gi BJJ at 476 NW Peacock Blvd #108, right off I-95 in Port St. Lucie. We're one of the most affordable BJJ programs in the area at $139/month for unlimited classes — plus you get access to striking classes too.",
+          a: `V3 MMA offers no-gi BJJ at 476 NW Peacock Blvd #108, right off I-95 in Port St. Lucie. We're one of the most affordable BJJ programs in the area at ${silverPrice}/month for unlimited classes — plus you get access to striking classes too.`,
         },
         {
           q: "How much does BJJ cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited no-gi BJJ is $139/month — which includes every other class we offer. No gi to purchase, no belt testing fees, no contracts. We also offer Saturday Open Mat for additional rolling time. Your first class is free.",
+          a: `At V3 MMA, unlimited no-gi BJJ is ${silverPrice}/month — which includes every other class we offer. No gi to purchase, no belt testing fees, no contracts. We also offer Saturday Open Mat for additional rolling time. Your first class is free.`,
         },
       ]}
       relatedDisciplines={[

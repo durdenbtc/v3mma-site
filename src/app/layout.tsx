@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import { silverPrice, priceRange } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "V3 MMA Gym & Fitness | Boxing, Kickboxing & MMA in Port St. Lucie, FL",
   description:
-    "Port St. Lucie's most affordable semi-private MMA gym. Boxing, Kickboxing, Muay Thai, No-Gi BJJ & MMA Fitness classes coached by a pro fighter. Small classes, no experience needed. $139/month — no contracts.",
+    `Port St. Lucie's most affordable semi-private MMA gym. Boxing, Kickboxing, Muay Thai, No-Gi BJJ & MMA Fitness classes coached by a pro fighter. Small classes, no experience needed. ${silverPrice}/month — no contracts.`,
   keywords: [
     "MMA gym Port St. Lucie",
     "boxing classes Port St. Lucie",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "V3 MMA Gym & Fitness | Boxing, Kickboxing & MMA in Port St. Lucie, FL",
     description:
-      "Boxing, Kickboxing, Muay Thai & BJJ classes coached by a pro fighter. Small classes, no contracts. Starting at $139/month.",
+      `Boxing, Kickboxing, Muay Thai & BJJ classes coached by a pro fighter. Small classes, no contracts. Starting at ${silverPrice}/month.`,
     url: "https://v3mma.com",
     siteName: "V3 MMA Gym & Fitness",
     locale: "en_US",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "V3 MMA Gym & Fitness | Boxing, Kickboxing & MMA in Port St. Lucie, FL",
     description:
-      "Boxing, Kickboxing, Muay Thai & BJJ classes coached by a pro fighter. Small classes, no contracts. Starting at $139/month.",
+      `Boxing, Kickboxing, Muay Thai & BJJ classes coached by a pro fighter. Small classes, no contracts. Starting at ${silverPrice}/month.`,
     images: ["https://v3mma.com/images/142dd1814f7b.jpg"],
   },
   robots: {
@@ -82,7 +83,7 @@ const faqJsonLd = {
       name: "Does V3 MMA offer a free trial class?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Your first class is free — just book online or walk in. After that, memberships are just $139/month for unlimited access to every class — no contracts, cancel anytime.",
+        text: `Yes! Your first class is free — just book online or walk in. After that, memberships are just ${silverPrice}/month for unlimited access to every class — no contracts, cancel anytime.`,
       },
     },
     {
@@ -90,7 +91,7 @@ const faqJsonLd = {
       name: "Are there contracts at V3 MMA?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No contracts. Memberships are month-to-month starting at $139/month and you can cancel anytime. We believe if you love the training, you'll stay.",
+        text: `No contracts. Memberships are month-to-month starting at ${silverPrice}/month and you can cancel anytime. We believe if you love the training, you'll stay.`,
       },
     },
     {
@@ -98,7 +99,7 @@ const faqJsonLd = {
       name: "What makes V3 MMA different from other gyms in Port St. Lucie?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Three things: class size (small, focused groups), price ($139/month for unlimited access to all disciplines), and coaching (Shane Mistretta is an active professional MMA fighter, not just a fitness instructor). V3 MMA is the most affordable semi-private MMA gym in Port St. Lucie and the only one where every class is coached by a verified pro fighter.",
+        text: `Three things: class size (small, focused groups), price (${silverPrice}/month for unlimited access to all disciplines), and coaching (Shane Mistretta is an active professional MMA fighter, not just a fitness instructor). V3 MMA is the most affordable semi-private MMA gym in Port St. Lucie and the only one where every class is coached by a verified pro fighter.`,
       },
     },
     {
@@ -134,7 +135,7 @@ const jsonLd = {
     latitude: 27.2939,
     longitude: -80.3718,
   },
-  priceRange: "$139-$349/month",
+  priceRange,
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",

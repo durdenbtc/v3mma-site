@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { silverPrice } from "@/lib/pricing";
 
 export default function FreeTrial() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -38,7 +39,7 @@ export default function FreeTrial() {
             Don&apos;t want to book online? Feel free to just come by during any scheduled class — walk-ins are always welcome!
           </p>
           <p className="text-slate-500 text-xs sm:text-sm max-w-md mx-auto">
-            Love it? Memberships are just $139/month for unlimited access to every class — no contracts, cancel anytime.
+            Love it? Memberships are just {silverPrice}/month for unlimited access to every class — no contracts, cancel anytime.
           </p>
         </div>
 

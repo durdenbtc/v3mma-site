@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import DisciplinePage from "@/components/DisciplinePage";
 import SiteShell from "@/components/SiteShell";
 import Schedule from "@/components/Schedule";
+import { silverPrice } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "Boxing Classes in Port St. Lucie, FL | V3 MMA Gym & Fitness",
   description:
-    "Learn boxing in Port St. Lucie with a pro MMA fighter coach. Beginner-friendly boxing classes with small class sizes, proper technique training, and real sparring. Free trial class — $139/month, no contracts.",
+    `Learn boxing in Port St. Lucie with a pro MMA fighter coach. Beginner-friendly boxing classes with small class sizes, proper technique training, and real sparring. Free trial class — ${silverPrice}/month, no contracts.`,
   keywords: [
     "boxing classes Port St. Lucie",
     "boxing gym Port St. Lucie",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Boxing Classes in Port St. Lucie | V3 MMA",
     description:
-      "Learn boxing from a pro fighter. Small classes, real technique, free trial. Starting at $139/month.",
+      `Learn boxing from a pro fighter. Small classes, real technique, free trial. Starting at ${silverPrice}/month.`,
     url: "https://v3mma.com/boxing-port-st-lucie",
   },
   alternates: {
@@ -64,7 +65,7 @@ export default function BoxingPage() {
             "Shane Mistretta isn't a personal trainer who watched a YouTube course — he's a professional MMA fighter with a 5-4 pro record who's been in the ring and the cage.",
         },
         {
-          title: "Affordable — $139/Month",
+          title: `Affordable — ${silverPrice}/Month`,
           description:
             "Unlimited boxing classes plus access to every other discipline at V3 MMA. No contracts, no sign-up fees, cancel anytime. That's less than most boxing-only gyms charge.",
         },
@@ -104,7 +105,7 @@ export default function BoxingPage() {
         },
         {
           q: "How much do boxing classes cost in Port St. Lucie?",
-          a: "At V3 MMA, unlimited boxing classes are included in our $139/month membership — which also gives you access to every other class we offer. No contracts, cancel anytime. Your first class is free.",
+          a: `At V3 MMA, unlimited boxing classes are included in our ${silverPrice}/month membership — which also gives you access to every other class we offer. No contracts, cancel anytime. Your first class is free.`,
         },
       ]}
       relatedDisciplines={[

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SiteShell from "@/components/SiteShell";
 import DisciplinePage from "@/components/DisciplinePage";
+import { silverPrice } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "Women's Kickboxing Classes in Port St. Lucie, FL | V3 MMA Gym",
@@ -79,7 +80,7 @@ export default function WomenKickboxingPage() {
         { q: "I've never done any martial arts — is that OK?", a: "Most of our members started as complete beginners. Classes are designed to build skills progressively, and with only 15 people max, the coach works with you individually." },
         { q: "Will I actually learn to fight or is it just a workout?", a: "Both. You'll learn real kickboxing and Muay Thai technique — proper form, combinations, defensive skills. The workout is a byproduct of learning to actually fight. It's not choreographed cardio kickboxing." },
         { q: "What do I need to bring?", a: "Just workout clothes (leggings or shorts and a t-shirt). We have gloves and wraps available for beginners, plus free cold water and Gatorade." },
-        { q: "How much does it cost?", a: "Memberships start at $139/month for unlimited classes — all disciplines included. No contracts, cancel anytime. Your first class is free." },
+        { q: "How much does it cost?", a: `Memberships start at ${silverPrice}/month for unlimited classes — all disciplines included. No contracts, cancel anytime. Your first class is free.` },
       ]}
       relatedDisciplines={[
         { name: "Boxing", href: "/boxing-port-st-lucie" },
