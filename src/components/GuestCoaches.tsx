@@ -3,8 +3,8 @@ import Image from "next/image";
 const coaches = [
   {
     name: "Chad Ritter",
-    role: "Guest Boxing Coach",
-    schedule: "1st Monday of every month — Evening",
+    role: "Striking & Boxing Coach",
+    schedule: "Tuesdays & Thursdays, 7–8pm — Advanced Striking / Boxing",
     image: "/images/chad-ritter.jpg",
     bio: `Chad has been in combat sports since he was 12 and started coaching
       at 14 — that's not a typo. He's a 3× amateur champion in boxing and
@@ -21,7 +21,7 @@ const coaches = [
   {
     name: "Santiago Garcia",
     role: "BJJ Coach",
-    schedule: "Every Tuesday — Evening",
+    schedule: "Tuesdays 6–7pm (No-Gi BJJ) & Fridays 5–6pm (BJJ Open Mat / Roll)",
     image: "/images/santiago-garcia.jpg",
     bio: `Santiago grew up between Buenos Aires, Mexico City, and Port St. Lucie —
       and started training jiu-jitsu while studying psychology at Florida State.
