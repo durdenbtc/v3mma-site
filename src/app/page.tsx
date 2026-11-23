@@ -1,5 +1,6 @@
 import SiteShell from "@/components/SiteShell";
 import Hero from "@/components/Hero";
+import BlackFriday from "@/components/BlackFriday";
 import Disciplines from "@/components/Disciplines";
 import VideoShowcase from "@/components/VideoShowcase";
 import Coach from "@/components/Coach";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <SiteShell>
       <Hero />
+      <BlackFriday />
       <Disciplines />
       <VideoShowcase />
       <Coach />
