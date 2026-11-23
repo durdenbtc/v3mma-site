@@ -4,7 +4,7 @@ const coaches = [
   {
     name: "Chad Ritter",
     role: "Striking & Boxing Coach",
-    schedule: "Tuesdays & Thursdays, 7–8pm — Advanced Striking / Boxing",
+    schedule: "Tuesdays & Thursdays, 7–8pm — Advanced Striking / Boxing (Invite-Only)",
     image: "/images/chad-ritter.jpg",
     bio: `Chad has been in combat sports since he was 12 and started coaching
       at 14 — that's not a typo. He's a 3× amateur champion in boxing and
