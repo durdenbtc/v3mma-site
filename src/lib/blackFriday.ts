@@ -9,6 +9,10 @@ import { PLANS, effective, usd } from "@/lib/pricing";
 export const BLACK_FRIDAY = {
   code: "BLACKFRIDAY",
   percentOff: 60,
+  /** GymDesk's "Limited Use" on the code, shared by both plans. */
+  spots: 20,
+  /** Flip to true once GymDesk shows the code fully used. The site cannot tell on its own. */
+  soldOut: false as boolean,
   /** End of day Nov 30 in Port St. Lucie (EST). The section hides itself after this. */
   endsAt: "2026-12-01T00:00:00-05:00",
   endsLabel: "Nov 30",
