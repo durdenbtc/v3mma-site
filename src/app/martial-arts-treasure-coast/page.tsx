@@ -77,7 +77,7 @@ export default function TreasureCoastPage() {
         { label: "Schedule", detail: "Morning, afternoon, and evening classes throughout the week including Saturday open mat. Check our schedule for full details." },
         { label: "Class Size", detail: "Small, focused groups — intimate enough for real coaching, big enough for quality partner work." },
         { label: "Experience Level", detail: "All classes are open to beginners through advanced. Techniques are taught progressively and coach adapts to each student." },
-        { label: "Coaching Staff", detail: "Advanced striking twice a week with Chad Ritter (3x amateur champion, pro fighter), plus BJJ with Santiago Garcia (purple belt under Igor Feliz) on Tuesdays and Fridays." },
+        { label: "Coaching Staff", detail: "Invite-only advanced striking twice a week with Chad Ritter (3x amateur champion, pro fighter), plus BJJ with Santiago Garcia (purple belt under Igor Feliz) on Tuesdays and Fridays." },
       ]}
       faqs={[
         { q: "Where exactly is V3 MMA located?", a: "476 NW Peacock Blvd #108, Port St. Lucie, FL 34986. We're right off the Peacock Boulevard exit on I-95, with free parking. Easy access from anywhere on the Treasure Coast." },
