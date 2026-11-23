@@ -50,7 +50,9 @@ const nowInSeconds = () => Math.floor(Date.now() / 1000);
 const noServerTime = () => null;
 
 function Tape() {
-  const run = `Black Friday ★ ${BLACK_FRIDAY.percentOff}% off your first month ★ Code ${BLACK_FRIDAY.code} ★ `;
+  const run = BLACK_FRIDAY.soldOut
+    ? `Black Friday ★ Sold out ★ All ${BLACK_FRIDAY.spots} spots claimed ★ `
+    : `Black Friday ★ ${BLACK_FRIDAY.percentOff}% off your first month ★ Only ${BLACK_FRIDAY.spots} spots ★ Code ${BLACK_FRIDAY.code} ★ `;
   return (
     <div className="bg-yellow-400 text-black overflow-hidden py-2" aria-hidden="true">
       {/* Two identical halves, so sliding by 50% loops without a seam. */}
@@ -121,12 +123,35 @@ function CodeChip() {
   );
 }
 
+function SoldOut() {
+  return (
+    <section id="black-friday" className="relative bg-black overflow-hidden">
+      <Tape />
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center">
+        <h2 className="text-5xl sm:text-7xl font-black tracking-tight pb-1 bg-gradient-to-b from-yellow-200 via-yellow-400 to-orange-500 bg-clip-text text-transparent">
+          Sold out
+        </h2>
+        <p className="text-slate-300 text-base sm:text-xl mt-4 mb-8">
+          All {BLACK_FRIDAY.spots} Black Friday spots went the distance. Your first class is still free, though.
+        </p>
+        <a
+          href="#free-trial"
+          className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl text-base sm:text-lg font-bold transition-all hover:shadow-xl hover:shadow-blue-500/30"
+        >
+          Book Your Free Class
+        </a>
+      </div>
+    </section>
+  );
+}
+
 export default function BlackFriday() {
   const now = useSyncExternalStore(subscribe, nowInSeconds, noServerTime);
   const secondsLeft = now === null ? null : Math.floor(DEADLINE / 1000) - now;
 
   // Never advertise a code GymDesk will reject.
   if (secondsLeft !== null && secondsLeft <= 0) return null;
+  if (BLACK_FRIDAY.soldOut) return <SoldOut />;
 
   return (
     <section id="black-friday" className="relative bg-black overflow-hidden">
@@ -156,6 +181,10 @@ export default function BlackFriday() {
 
         <p className="text-slate-300 text-base sm:text-xl max-w-xl mx-auto mt-5 mb-8">
           Everyone else is fighting over TVs. Come learn how to actually fight.
+        </p>
+
+        <p className="inline-block -rotate-2 bg-red-600 text-white text-base sm:text-xl font-black uppercase tracking-wide px-5 py-2 rounded-lg mb-8 shadow-lg shadow-red-600/30">
+          Only {BLACK_FRIDAY.spots} spots
         </p>
 
         <RoundClock secondsLeft={secondsLeft} />
@@ -210,7 +239,8 @@ export default function BlackFriday() {
 
         <p className="text-slate-500 text-xs max-w-2xl mx-auto mt-8 leading-relaxed">
           New sign-ups only. {BLACK_FRIDAY.percentOff}% off the first monthly payment on Silver Monthly or Kids MMA with
-          code {BLACK_FRIDAY.code} through {BLACK_FRIDAY.endsLabel}, 2026. Renews at the regular monthly price shown. Plus
+          code {BLACK_FRIDAY.code} through {BLACK_FRIDAY.endsLabel}, 2026, or until {BLACK_FRIDAY.spots} spots are claimed,
+          whichever comes first. Renews at the regular monthly price shown. Plus
           tax. No contracts, cancel anytime.
         </p>
       </div>
